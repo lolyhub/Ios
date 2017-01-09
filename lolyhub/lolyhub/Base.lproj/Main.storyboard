@@ -1,14 +1,117 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nZ7-lK-Hil">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PGa-Ad-xwO">
+            <objects>
+                <navigationController id="nZ7-lK-Hil" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mxe-rN-r63">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1jZ-cg-9Rd" kind="relationship" relationship="rootViewController" id="l2l-YD-Fdr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3WD-4P-iPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3166" y="-125"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="vlU-QE-wjn">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="WIf-rB-fvO" customClass="LoginViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9yh-MI-HwP"/>
+                        <viewControllerLayoutGuide type="bottom" id="khW-RA-ybW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Tw-la-RYU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.35799442279999999" green="0.49934209299999999" blue="0.80292137630000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otq-p6-UzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1633" y="665"/>
+        </scene>
+        <!--SignupViewController-->
+        <scene sceneID="bAZ-Sq-Ed1">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" title="SignupViewController" id="ViP-GT-byq" customClass="SignupViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d5V-xQ-PqE"/>
+                        <viewControllerLayoutGuide type="bottom" id="2U0-ME-Ou9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JWJ-gq-hkM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.58039215690000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSl-dC-i9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2479" y="666"/>
+        </scene>
+        <!--LoginSignupParentViewController-->
+        <scene sceneID="9ZU-LP-PJH">
+            <objects>
+                <viewController storyboardIdentifier="LoginSignupParentViewController" title="LoginSignupParentViewController" id="1jZ-cg-9Rd" customClass="LoginSignupParentViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2k-HN-Avx"/>
+                        <viewControllerLayoutGuide type="bottom" id="khs-vW-KBq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaC-7h-J4T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-yj-L1Q">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TLu-yj-L1Q" secondAttribute="trailing" id="NSP-9e-GBN"/>
+                            <constraint firstItem="TLu-yj-L1Q" firstAttribute="top" secondItem="c2k-HN-Avx" secondAttribute="bottom" id="f3d-nN-Wpm"/>
+                            <constraint firstItem="TLu-yj-L1Q" firstAttribute="leading" secondItem="TaC-7h-J4T" secondAttribute="leading" id="tpg-Do-bl1"/>
+                            <constraint firstItem="TLu-yj-L1Q" firstAttribute="bottom" secondItem="khs-vW-KBq" secondAttribute="top" id="uUW-P9-5Wm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2nF-K3-3xG">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="IH1-mt-FHq">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="SIGNUP"/>
+                                <segment title="LOGIN"/>
+                            </segments>
+                            <connections>
+                                <action selector="switchTabs:" destination="1jZ-cg-9Rd" eventType="valueChanged" id="1PR-4l-iOe"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentView" destination="TLu-yj-L1Q" id="RUp-ID-HBJ"/>
+                        <outlet property="segmentedControl" destination="IH1-mt-FHq" id="Hyv-r9-CUw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpM-2k-XaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2478" y="-125"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3231" y="1700"/>
         </scene>
     </scenes>
 </document>

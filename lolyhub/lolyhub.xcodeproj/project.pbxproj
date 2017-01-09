@@ -14,6 +14,9 @@
 		E978C3B41E236B3F00B73BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */; };
 		E978C3BF1E236B3F00B73BF6 /* lolyhubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3BE1E236B3F00B73BF6 /* lolyhubTests.swift */; };
 		E978C3CA1E236B3F00B73BF6 /* lolyhubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3C91E236B3F00B73BF6 /* lolyhubUITests.swift */; };
+		E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */; };
+		E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E01E239A7600B73BF6 /* LoginViewController.swift */; };
+		E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E21E239A8200B73BF6 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E978C3C51E236B3F00B73BF6 /* lolyhubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lolyhubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978C3C91E236B3F00B73BF6 /* lolyhubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lolyhubUITests.swift; sourceTree = "<group>"; };
 		E978C3CB1E236B3F00B73BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupParentViewController.swift; sourceTree = "<group>"; };
+		E978C3E01E239A7600B73BF6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E978C3E21E239A8200B73BF6 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				E978C3B01E236B3F00B73BF6 /* Assets.xcassets */,
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
+				E978C3DD1E2388A700B73BF6 /* LoginSignup */,
 			);
 			path = lolyhub;
 			sourceTree = "<group>";
@@ -123,6 +130,16 @@
 				E978C3CB1E236B3F00B73BF6 /* Info.plist */,
 			);
 			path = lolyhubUITests;
+			sourceTree = "<group>";
+		};
+		E978C3DD1E2388A700B73BF6 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */,
+				E978C3E01E239A7600B73BF6 /* LoginViewController.swift */,
+				E978C3E21E239A8200B73BF6 /* SignupViewController.swift */,
+			);
+			name = LoginSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */,
 				E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */,
+				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,
+				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +525,7 @@
 				E978C3D01E236B3F00B73BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E978C3D11E236B3F00B73BF6 /* Build configuration list for PBXNativeTarget "lolyhubTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				E978C3D31E236B3F00B73BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E978C3D41E236B3F00B73BF6 /* Build configuration list for PBXNativeTarget "lolyhubUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				E978C3D61E236B3F00B73BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
