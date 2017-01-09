@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */; };
 		E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3AB1E236B3F00B73BF6 /* ViewController.swift */; };
 		E978C3AF1E236B3F00B73BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E978C3AD1E236B3F00B73BF6 /* Main.storyboard */; };
@@ -39,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16D1E0670C95468046BF128A /* Pods_lolyhub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lolyhub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
+		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E978C3A61E236B3F00B73BF6 /* lolyhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolyhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E978C3AB1E236B3F00B73BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA4968D23E961871D1A48D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16D1E0670C95468046BF128A /* Pods_lolyhub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E978C39D1E236B3F00B73BF6 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,8 @@
 				E978C3BD1E236B3F00B73BF6 /* lolyhubTests */,
 				E978C3C81E236B3F00B73BF6 /* lolyhubUITests */,
 				E978C3A71E236B3F00B73BF6 /* Products */,
+				F242D95718ABB9801402418F /* Pods */,
+				0CA4968D23E961871D1A48D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +171,15 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		F242D95718ABB9801402418F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */,
+				3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E978C3CE1E236B3F00B73BF6 /* Build configuration list for PBXNativeTarget "lolyhub" */;
 			buildPhases = (
+				23287215B6A941BADA5A98FE /* [CP] Check Pods Manifest.lock */,
 				E978C3A21E236B3F00B73BF6 /* Sources */,
 				E978C3A31E236B3F00B73BF6 /* Frameworks */,
 				E978C3A41E236B3F00B73BF6 /* Resources */,
+				85E6B5CB047113EDF0F36428 /* [CP] Embed Pods Frameworks */,
+				6BD6E1972CAF3DF8CB73036C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +311,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23287215B6A941BADA5A98FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD6E1972CAF3DF8CB73036C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E6B5CB047113EDF0F36428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E978C3A21E236B3F00B73BF6 /* Sources */ = {
@@ -444,6 +519,7 @@
 		};
 		E978C3CF1E236B3F00B73BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lolyhub/Info.plist;
@@ -457,6 +533,7 @@
 		};
 		E978C3D01E236B3F00B73BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lolyhub/Info.plist;
