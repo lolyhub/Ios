@@ -20,11 +20,12 @@ class LoginSignupParentViewController: UIViewController {
     
     var currentViewController: UIViewController?
     lazy var firstChildTabVC: UIViewController? = {
-        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController")
+        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: LHViewControllers.SignUpViewController.rawValue)
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+       // let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: )
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: LHViewControllers.LoginViewController.rawValue)
         return secondChildTabVC
     }()
 

@@ -17,6 +17,8 @@
 		E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */; };
 		E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E01E239A7600B73BF6 /* LoginViewController.swift */; };
 		E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E21E239A8200B73BF6 /* SignupViewController.swift */; };
+		E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E51E23B2E700B73BF6 /* Constants.swift */; };
+		E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E71E23B2F600B73BF6 /* LHStyler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupParentViewController.swift; sourceTree = "<group>"; };
 		E978C3E01E239A7600B73BF6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E978C3E21E239A8200B73BF6 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E978C3E51E23B2E700B73BF6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E978C3E71E23B2F600B73BF6 /* LHStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHStyler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				E978C3B01E236B3F00B73BF6 /* Assets.xcassets */,
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
+				E978C3E41E23B2C300B73BF6 /* Utilities */,
 				E978C3DD1E2388A700B73BF6 /* LoginSignup */,
 			);
 			path = lolyhub;
@@ -140,6 +145,15 @@
 				E978C3E21E239A8200B73BF6 /* SignupViewController.swift */,
 			);
 			name = LoginSignup;
+			sourceTree = "<group>";
+		};
+		E978C3E41E23B2C300B73BF6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E978C3E51E23B2E700B73BF6 /* Constants.swift */,
+				E978C3E71E23B2F600B73BF6 /* LHStyler.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +295,8 @@
 				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
+				E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */,
+				E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
