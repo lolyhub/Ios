@@ -24,7 +24,6 @@ class LoginSignupParentViewController: UIViewController {
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-       // let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: )
         let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: LHViewControllers.LoginViewController.rawValue)
         return secondChildTabVC
     }()
@@ -32,8 +31,7 @@ class LoginSignupParentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // segmentedControl.initUI()
-        
+       
         segmentedControl.selectedSegmentIndex = TabIndex.FirstChildTab.rawValue
         displayCurrentTab(tabIndex: TabIndex.FirstChildTab.rawValue)
     }
@@ -54,7 +52,6 @@ class LoginSignupParentViewController: UIViewController {
         displayCurrentTab(tabIndex: (sender as AnyObject).selectedSegmentIndex)
         
     }
-    
     
     
     func displayCurrentTab(tabIndex: Int){
