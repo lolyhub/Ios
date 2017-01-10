@@ -143,6 +143,10 @@
                             <constraint firstItem="2PY-tZ-fF4" firstAttribute="leading" secondItem="4Tw-la-RYU" secondAttribute="leadingMargin" constant="-8" id="xMf-U5-unI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="O3i-YV-fIO" id="Rgr-HS-VgL"/>
+                        <outlet property="usernameTextField" destination="2PY-tZ-fF4" id="sNH-q3-VIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otq-p6-UzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,12 +198,14 @@
                     <navigationItem key="navigationItem" id="2nF-K3-3xG">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="IH1-mt-FHq">
-                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <rect key="frame" x="23" y="7" width="330" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.79205030200000004" green="0.79265695810000003" blue="0.79214423889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <segments>
                                 <segment title="SIGNUP"/>
                                 <segment title="LOGIN"/>
                             </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="switchTabs:" destination="1jZ-cg-9Rd" eventType="valueChanged" id="1PR-4l-iOe"/>
                             </connections>

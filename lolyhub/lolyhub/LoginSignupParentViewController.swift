@@ -32,6 +32,7 @@ class LoginSignupParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        setupSegmentedControl()
         segmentedControl.selectedSegmentIndex = TabIndex.FirstChildTab.rawValue
         displayCurrentTab(tabIndex: TabIndex.FirstChildTab.rawValue)
     }
@@ -42,6 +43,11 @@ class LoginSignupParentViewController: UIViewController {
             currentViewController.viewWillDisappear(animated)
         }
     }
+    
+    func setupSegmentedControl() {
+        self.segmentedControl.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black], for: UIControlState.selected)
+    }
+    
     
     // MARK: - Switching Tabs Functions
     @IBAction func switchTabs(_ sender: Any) {

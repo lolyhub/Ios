@@ -7,7 +7,24 @@
 //
 
 import UIKit
+import Foundation
 
-class LHStyler: NSObject {
 
+class LolyHubStyler{
+    
+    //UITextField Colors
+    static let primaryTextFieldBorderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+
+}
+
+extension UITextField {
+    
+    func stylePrimaryTextField() {
+        
+     self.layer.borderColor = LolyHubStyler.primaryTextFieldBorderColor.cgColor
+        self.layer.borderWidth = 1
+
+    }
+    
+    
 }
