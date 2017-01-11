@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
+		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
 		E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */; };
 		E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3AB1E236B3F00B73BF6 /* ViewController.swift */; };
 		E978C3AF1E236B3F00B73BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E978C3AD1E236B3F00B73BF6 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		16D1E0670C95468046BF128A /* Pods_lolyhub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lolyhub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
+		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
 		E978C3A61E236B3F00B73BF6 /* lolyhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolyhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E978C3AB1E236B3F00B73BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */,
 				E978C3AB1E236B3F00B73BF6 /* ViewController.swift */,
+				E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */,
 				E978C3AD1E236B3F00B73BF6 /* Main.storyboard */,
 				E978C3B01E236B3F00B73BF6 /* Assets.xcassets */,
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 				E978C3B41E236B3F00B73BF6 /* LaunchScreen.storyboard in Resources */,
 				E978C3B11E236B3F00B73BF6 /* Assets.xcassets in Resources */,
 				E978C3AF1E236B3F00B73BF6 /* Main.storyboard in Resources */,
+				E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosofttech.lolyhub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -542,6 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosofttech.lolyhub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
