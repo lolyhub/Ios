@@ -10,9 +10,15 @@ import UIKit
 
 class SignupViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        
+        
         // Do any additional setup after loading the view.
     }
 

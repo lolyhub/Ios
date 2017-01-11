@@ -163,7 +163,7 @@
         <!--SignupViewController-->
         <scene sceneID="bAZ-Sq-Ed1">
             <objects>
-                <viewController storyboardIdentifier="SignupViewController" title="SignupViewController" id="ViP-GT-byq" customClass="SignupViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" title="SignupViewController" automaticallyAdjustsScrollViewInsets="NO" id="ViP-GT-byq" customClass="SignupViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d5V-xQ-PqE"/>
                         <viewControllerLayoutGuide type="bottom" id="2U0-ME-Ou9"/>
@@ -173,8 +173,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epW-iA-298">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1220"/>
+                                <rect key="frame" x="0.0" y="-64" width="375" height="1284"/>
                                 <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="FirstName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-Yx-uC2">
+                                        <rect key="frame" x="8" y="54" width="359" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="fOY-vB-R2F"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="WIf-rB-fvO" id="zt3-Ht-zgP"/>
+                                        </connections>
+                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="LastName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-MI-zBn">
                                         <rect key="frame" x="8" y="126" width="359" height="45"/>
                                         <constraints>
@@ -233,18 +245,6 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="delegate" destination="WIf-rB-fvO" id="QVp-0o-n5j"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="FirstName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-Yx-uC2">
-                                        <rect key="frame" x="8" y="54" width="359" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="fOY-vB-R2F"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="WIf-rB-fvO" id="zt3-Ht-zgP"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Re-Enter Your Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wzc-da-9fy">
@@ -451,18 +451,23 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="epW-iA-298" secondAttribute="trailing" id="8yn-nn-LYw"/>
-                            <constraint firstItem="epW-iA-298" firstAttribute="top" secondItem="JWJ-gq-hkM" secondAttribute="top" id="cAK-4M-hLb"/>
+                            <constraint firstItem="epW-iA-298" firstAttribute="top" secondItem="JWJ-gq-hkM" secondAttribute="top" constant="-64" id="H6O-rJ-ZSq"/>
                             <constraint firstItem="epW-iA-298" firstAttribute="bottom" secondItem="2U0-ME-Ou9" secondAttribute="top" id="mNa-Yw-Ubj"/>
                             <constraint firstItem="epW-iA-298" firstAttribute="leading" secondItem="JWJ-gq-hkM" secondAttribute="leading" id="vta-bA-nb3"/>
-                            <constraint firstItem="epW-iA-298" firstAttribute="top" secondItem="JWJ-gq-hkM" secondAttribute="top" id="wEs-Cu-bnF"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1220"/>
+                    <connections>
+                        <outlet property="scrollView" destination="epW-iA-298" id="rg4-tL-YYI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSl-dC-i9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-977" y="123"/>
+            <point key="canvasLocation" x="-978.39999999999998" y="122.33883058470765"/>
         </scene>
         <!--LoginSignupParentViewController-->
         <scene sceneID="9ZU-LP-PJH">
