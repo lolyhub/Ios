@@ -126,8 +126,8 @@
 			children = (
 				E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */,
 				E978C3AB1E236B3F00B73BF6 /* ViewController.swift */,
-				E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */,
 				E978C3AD1E236B3F00B73BF6 /* Main.storyboard */,
+				E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */,
 				E978C3B01E236B3F00B73BF6 /* Assets.xcassets */,
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
