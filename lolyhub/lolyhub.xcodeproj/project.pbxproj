@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
+		E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F931E27807D00199726 /* SSASideMenu.swift */; };
+		E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F961E27821200199726 /* BaseTabBarController.swift */; };
+		E9367F9A1E27829700199726 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F991E27829700199726 /* SearchViewController.swift */; };
+		E9367F9C1E2782E200199726 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F9B1E2782E200199726 /* SideMenuTableViewController.swift */; };
+		E9367F9E1E27831F00199726 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F9D1E27831F00199726 /* WalletViewController.swift */; };
+		E9367FA01E27832F00199726 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F9F1E27832F00199726 /* WishListViewController.swift */; };
+		E9367FA21E27833A00199726 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367FA11E27833A00199726 /* CartViewController.swift */; };
+		E9367FA41E27834400199726 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367FA31E27834400199726 /* HomeViewController.swift */; };
 		E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */; };
 		E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3AB1E236B3F00B73BF6 /* ViewController.swift */; };
 		E978C3AF1E236B3F00B73BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E978C3AD1E236B3F00B73BF6 /* Main.storyboard */; };
@@ -45,6 +53,14 @@
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
+		E9367F931E27807D00199726 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
+		E9367F961E27821200199726 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E9367F991E27829700199726 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E9367F9B1E2782E200199726 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		E9367F9D1E27831F00199726 /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		E9367F9F1E27832F00199726 /* WishListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		E9367FA11E27833A00199726 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		E9367FA31E27834400199726 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E978C3A61E236B3F00B73BF6 /* lolyhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolyhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978C3A91E236B3F00B73BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E978C3AB1E236B3F00B73BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +115,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E9367F951E2781DB00199726 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E9367F961E27821200199726 /* BaseTabBarController.swift */,
+				E9367F9B1E2782E200199726 /* SideMenuTableViewController.swift */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		E9367F981E27826100199726 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9367FA31E27834400199726 /* HomeViewController.swift */,
+				E9367F991E27829700199726 /* SearchViewController.swift */,
+				E9367F9D1E27831F00199726 /* WalletViewController.swift */,
+				E9367F9F1E27832F00199726 /* WishListViewController.swift */,
+				E9367FA11E27833A00199726 /* CartViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		E978C39D1E236B3F00B73BF6 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +169,9 @@
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
 				E978C3E41E23B2C300B73BF6 /* Utilities */,
+				E9367F981E27826100199726 /* ViewControllers */,
 				E978C3DD1E2388A700B73BF6 /* LoginSignup */,
+				E9367F951E2781DB00199726 /* TabBarController */,
 			);
 			path = lolyhub;
 			sourceTree = "<group>";
@@ -168,6 +207,7 @@
 		E978C3E41E23B2C300B73BF6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E9367F931E27807D00199726 /* SSASideMenu.swift */,
 				E978C3E51E23B2E700B73BF6 /* Constants.swift */,
 				E978C3E71E23B2F600B73BF6 /* LHStyler.swift */,
 			);
@@ -369,13 +409,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9367F9A1E27829700199726 /* SearchViewController.swift in Sources */,
 				E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */,
+				E9367FA21E27833A00199726 /* CartViewController.swift in Sources */,
 				E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */,
+				E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */,
+				E9367FA41E27834400199726 /* HomeViewController.swift in Sources */,
 				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,
+				E9367F9E1E27831F00199726 /* WalletViewController.swift in Sources */,
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
+				E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */,
 				E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */,
 				E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */,
+				E9367FA01E27832F00199726 /* WishListViewController.swift in Sources */,
+				E9367F9C1E2782E200199726 /* SideMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
