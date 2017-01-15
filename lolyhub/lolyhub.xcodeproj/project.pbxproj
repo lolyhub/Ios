@@ -29,6 +29,8 @@
 		E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E21E239A8200B73BF6 /* SignupViewController.swift */; };
 		E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E51E23B2E700B73BF6 /* Constants.swift */; };
 		E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E71E23B2F600B73BF6 /* LHStyler.swift */; };
+		E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */; };
+		E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		E978C3E21E239A8200B73BF6 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E978C3E51E23B2E700B73BF6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E978C3E71E23B2F600B73BF6 /* LHStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHStyler.swift; sourceTree = "<group>"; };
+		E9A92BBF1E2B57E500A0DBFF /* lolyhub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lolyhub-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9A92BC01E2B57E600A0DBFF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,11 +213,23 @@
 		E978C3E41E23B2C300B73BF6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E9A92BBF1E2B57E500A0DBFF /* lolyhub-Bridging-Header.h */,
 				E9367F931E27807D00199726 /* SSASideMenu.swift */,
+				E9A92BBE1E2B57D000A0DBFF /* SWRevealViewController */,
 				E978C3E51E23B2E700B73BF6 /* Constants.swift */,
 				E978C3E71E23B2F600B73BF6 /* LHStyler.swift */,
+				E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E9A92BBE1E2B57D000A0DBFF /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9A92BC01E2B57E600A0DBFF /* SWRevealViewController.h */,
+				E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		F242D95718ABB9801402418F /* Pods */ = {
@@ -294,6 +312,7 @@
 				TargetAttributes = {
 					E978C3A51E236B3F00B73BF6 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					E978C3B91E236B3F00B73BF6 = {
@@ -420,6 +439,8 @@
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
 				E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */,
+				E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */,
+				E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */,
 				E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */,
 				E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */,
 				E9367FA01E27832F00199726 /* WishListViewController.swift in Sources */,
@@ -574,11 +595,14 @@
 			baseConfigurationReference = 4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = lolyhub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosofttech.lolyhub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lolyhub/lolyhub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -589,11 +613,13 @@
 			baseConfigurationReference = 3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = lolyhub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosofttech.lolyhub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lolyhub/lolyhub-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

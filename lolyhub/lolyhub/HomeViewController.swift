@@ -10,12 +10,30 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       //side menu setup
+        addSideMenuFunctionality(to: sideMenuButton, on: self)
+        
         // Do any additional setup after loading the view.
     }
 
+
+    @IBAction func sideMenuButtonClicked(_ sender: Any) {
+        
+        print("hello")
+        
+        if self.revealViewController() != nil {
+            
+            
+            
+        }
+        
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
