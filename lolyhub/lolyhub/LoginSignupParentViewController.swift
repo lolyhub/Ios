@@ -32,8 +32,7 @@ class LoginSignupParentViewController: UIViewController {
     }
     
     @IBAction func signUpClicked(_ sender: Any) {
-        
-        print("signUp clicked")
+
         let signUpView = UIStoryboard.signupViewController()
         self.navigationController?.pushViewController(signUpView, animated: true)
     }
