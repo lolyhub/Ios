@@ -24,6 +24,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func setupView() {
         
+        self.title = "Log in"
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
+        
         self.usernameTextField.stylePrimaryTextField()
         self.passwordTextField.stylePrimaryTextField()
         

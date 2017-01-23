@@ -26,3 +26,5 @@ func addSideMenuFunctionality(to sideButton: UIBarButtonItem, on currentViewCont
 
 
 
+
+
