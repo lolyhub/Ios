@@ -31,6 +31,7 @@
 		E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E71E23B2F600B73BF6 /* LHStyler.swift */; };
 		E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */; };
 		E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */; };
+		E9EE04121E360580006C85FD /* LHUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE04111E360580006C85FD /* LHUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E9A92BC01E2B57E600A0DBFF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		E9EE04111E360580006C85FD /* LHUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				E978C3E51E23B2E700B73BF6 /* Constants.swift */,
 				E978C3E71E23B2F600B73BF6 /* LHStyler.swift */,
 				E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */,
+				E9EE04111E360580006C85FD /* LHUtils.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,
 				E9367F9E1E27831F00199726 /* WalletViewController.swift in Sources */,
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
+				E9EE04121E360580006C85FD /* LHUtils.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
 				E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */,
 				E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */,

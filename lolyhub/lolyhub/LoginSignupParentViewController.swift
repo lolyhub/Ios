@@ -18,8 +18,33 @@ class LoginSignupParentViewController: UIViewController {
        
         print("signIn signUp is here")
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+       // self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @IBAction func signUpClicked(_ sender: Any) {
+        
+        print("signUp clicked")
+        let signUpView = UIStoryboard.signupViewController()
+        self.navigationController?.pushViewController(signUpView, animated: true)
+    }
+    
+    
+    @IBAction func loginClicked(_ sender: Any) {
+        
+        let loginView = UIStoryboard.loginViewController()
+        self.navigationController?.pushViewController(loginView, animated: true)
+    }
+    
     
 
     /*
