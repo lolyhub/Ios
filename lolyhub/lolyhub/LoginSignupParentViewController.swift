@@ -11,14 +11,23 @@ import UIKit
 class LoginSignupParentViewController: UIViewController {
 
    
+    @IBOutlet weak var sloganLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        print("signIn signUp is here")
+        setupView()
         
-       // self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    func setupView() {
+        
+        self.signUpButton.titleLabel?.font = UIFont.setOpenSansBold(size: 20)
+        self.loginButton.titleLabel?.font = UIFont.setOpenSansBold(size: 20)
+        self.sloganLabel.font = UIFont.setOpenSansBold(size: 20)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,8 +51,8 @@ class LoginSignupParentViewController: UIViewController {
         
         let loginView = UIStoryboard.loginViewController()
         self.navigationController?.pushViewController(loginView, animated: true)
+        
     }
-    
     
 
     /*

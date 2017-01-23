@@ -578,6 +578,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="contentView" destination="TLu-yj-L1Q" id="RUp-ID-HBJ"/>
+                        <outlet property="loginButton" destination="KCH-V1-RLp" id="dqR-8G-DrC"/>
+                        <outlet property="signUpButton" destination="9bS-GN-YmG" id="hMl-JL-dAg"/>
+                        <outlet property="sloganLabel" destination="gRx-jE-Xr3" id="W1L-Ab-txG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpM-2k-XaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -671,7 +674,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -690,7 +693,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" systemItem="search" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -709,7 +712,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" systemItem="bookmarks" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -728,7 +731,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" systemItem="mostRecent" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -747,7 +750,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="4" systemItem="downloads" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -765,7 +768,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
