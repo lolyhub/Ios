@@ -844,6 +844,6 @@
     <resources>
         <image name="facebookIconImage" width="99" height="94"/>
         <image name="googlePlusIconImage" width="99" height="94"/>
-        <image name="lolyhubLogo" width="193" height="88"/>
+        <image name="lolyhubLogo" width="318" height="136"/>
     </resources>
 </document>
