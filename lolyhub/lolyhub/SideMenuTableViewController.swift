@@ -35,6 +35,7 @@ class SideMenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 4
+        
     }
 
     
@@ -49,6 +50,7 @@ class SideMenuTableViewController: UITableViewController {
             cell.textLabel?.text = "Home"
         case 1:
             cell.textLabel?.text = "Add Programs"
+     
         case 2:
             cell.textLabel?.text = "Order History"
         case 3:

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hw1-Yv-5Mm" id="xdu-Fa-Ydz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -569,7 +569,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-yj-L1Q">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -592,14 +592,10 @@
                                 <segment title="LOGIN"/>
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="switchTabs:" destination="1jZ-cg-9Rd" eventType="valueChanged" id="1PR-4l-iOe"/>
-                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="TLu-yj-L1Q" id="RUp-ID-HBJ"/>
-                        <outlet property="segmentedControl" destination="IH1-mt-FHq" id="Hyv-r9-CUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpM-2k-XaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
