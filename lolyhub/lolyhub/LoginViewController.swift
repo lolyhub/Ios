@@ -18,11 +18,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // navigation back button
+        addBackArrowButton(on: self)
+        
         setupView()
+        
         // Do any additional setup after loading the view.
     }
     
     func setupView() {
+        
         
         self.title = "Log in"
         self.navigationController?.navigationBar.titleTextAttributes =
@@ -30,6 +35,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.usernameTextField.stylePrimaryTextField()
         self.passwordTextField.stylePrimaryTextField()
+        
+        
+        
+        
         
     }
 

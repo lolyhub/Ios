@@ -24,6 +24,19 @@ func addSideMenuFunctionality(to sideButton: UIBarButtonItem, on currentViewCont
     
 }
 
+func addBackArrowButton(on currentViewController:UIViewController) {
+    
+    let backImage = UIImage(named: "backArrow")
+    currentViewController.navigationController?.navigationBar.backIndicatorImage = backImage
+    currentViewController.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
+    
+    
+    currentViewController.navigationController?.navigationBar.tintColor = UIColor.black
+    
+    currentViewController.navigationController?.navigationBar.backItem?.title = ""
+    
+    
+}
 
 
 
