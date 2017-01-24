@@ -20,7 +20,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var birthDateTextField: UITextField!
-    @IBOutlet weak var genderTextField: UITextField!
+
     @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
@@ -29,6 +29,8 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addBackArrowButton(on: self)
+        setupView()
         setupTextFields()
         self.automaticallyAdjustsScrollViewInsets = false
         self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
@@ -37,6 +39,15 @@ class SignupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func setupView() {
+        
+        self.title = "Sign Up"
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
+        
+    }
+    
+    
     func setupTextFields() {
         
         self.firstNameTextField.stylePrimaryTextField()
@@ -47,7 +58,7 @@ class SignupViewController: UIViewController {
         self.passwordTextField.stylePrimaryTextField()
         self.confirmPasswordTextField.stylePrimaryTextField()
         self.birthDateTextField.stylePrimaryTextField()
-        self.genderTextField.stylePrimaryTextField()
+
         self.countryTextField.stylePrimaryTextField()
         self.stateTextField.stylePrimaryTextField()
         self.mobileNumberTextField.stylePrimaryTextField()

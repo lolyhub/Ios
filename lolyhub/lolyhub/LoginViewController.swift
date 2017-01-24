@@ -36,10 +36,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.usernameTextField.stylePrimaryTextField()
         self.passwordTextField.stylePrimaryTextField()
         
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
