@@ -10,9 +10,12 @@ import UIKit
 
 class WalletViewController: UIViewController {
 
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addSideMenuFunctionality(to: sideMenuButton, on: self)
+        addNavigationTitleImage(on: self)
         // Do any additional setup after loading the view.
     }
 

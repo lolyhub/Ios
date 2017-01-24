@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="udf-Q6-4Yf">
+                    <navigationItem key="navigationItem" id="udf-Q6-4Yf">
                         <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="P5A-Wu-AQi"/>
                     </navigationItem>
                     <connections>
@@ -699,7 +699,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Wallet" id="VAe-d5-Dam"/>
+                    <navigationItem key="navigationItem" id="VAe-d5-Dam">
+                        <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="G4D-QN-ALm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="G4D-QN-ALm" id="g11-ht-POy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vma-uF-sE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -742,7 +747,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WishList" id="cdB-yF-3oL"/>
+                    <navigationItem key="navigationItem" id="cdB-yF-3oL">
+                        <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="PN3-ca-RCn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="PN3-ca-RCn" id="dmf-8O-hDt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ld4-Xu-oCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -761,7 +771,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cart" id="SD4-Mf-JV8"/>
+                    <navigationItem key="navigationItem" id="SD4-Mf-JV8">
+                        <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="JRU-fi-bF3"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="JRU-fi-bF3" id="1uh-sW-iMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxr-EQ-cKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

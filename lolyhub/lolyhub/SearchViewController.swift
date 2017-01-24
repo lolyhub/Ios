@@ -15,6 +15,7 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
 
         addSideMenuFunctionality(to: sideMenuButton, on: self)
+        addNavigationTitleImage(on: self)
         // Do any additional setup after loading the view.
     }
 

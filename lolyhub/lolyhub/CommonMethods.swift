@@ -38,6 +38,14 @@ func addBackArrowButton(on currentViewController:UIViewController) {
     
 }
 
+func addNavigationTitleImage(on currentViewControler:UIViewController) {
+    
+    let logoImageName = UIImage(named: "navigationBarImage")
+    let imageLogo = UIImageView(image: logoImageName)
+    currentViewControler.navigationItem.titleView = imageLogo
+    
+}
+
 
 
 
