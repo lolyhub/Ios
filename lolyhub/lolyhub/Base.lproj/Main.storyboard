@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ZV-5D-ASD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xw1-li-uHu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,13 +77,12 @@
             <objects>
                 <tabBarController storyboardIdentifier="BaseTabBarController" title="BaseTabBarController" id="yFG-3R-U6h" customClass="BaseTabBarController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jHS-qa-cC2"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Odc-FY-f1K">
+                    <tabBar key="tabBar" tag="1" contentMode="scaleAspectFill" id="Odc-FY-f1K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7w7-wG-2nK" kind="relationship" relationship="viewControllers" id="Gb5-JT-thR"/>
                         <segue destination="Lap-NK-EMz" kind="relationship" relationship="viewControllers" id="Vin-Tv-KhT"/>
                         <segue destination="EVu-3f-bhy" kind="relationship" relationship="viewControllers" id="yrl-E2-giz"/>
                         <segue destination="Hg1-Ba-uys" kind="relationship" relationship="viewControllers" id="4VN-tS-5y9"/>
@@ -107,7 +106,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="udf-Q6-4Yf"/>
+                    <navigationItem key="navigationItem" title="Search" id="udf-Q6-4Yf">
+                        <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="P5A-Wu-AQi"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="P5A-Wu-AQi" id="lMs-KD-n4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSG-g5-B6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -715,7 +719,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="5gb-7k-rYX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="EbS-jz-G8e"/>
+                        <barButtonItem key="leftBarButtonItem" image="searchTabBarICon" id="EbS-jz-G8e"/>
                     </navigationItem>
                     <connections>
                         <outlet property="sideMenuButton" destination="EbS-jz-G8e" id="JU6-v9-Qy2"/>
@@ -763,13 +767,13 @@
             </objects>
             <point key="canvasLocation" x="-444" y="2463"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="9S3-rt-Zx4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="jYh-ZK-L9b"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="blueDotIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -782,13 +786,13 @@
             </objects>
             <point key="canvasLocation" x="-1383" y="-1075"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Search-->
         <scene sceneID="dne-rp-DFQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" systemItem="search" id="SXY-Lb-I3j"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="searchTabBarICon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -801,13 +805,13 @@
             </objects>
             <point key="canvasLocation" x="-1383" y="-255"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Wallet-->
         <scene sceneID="f1R-RS-glx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="2" systemItem="bookmarks" id="7uM-Uc-ap3"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="yellowDotIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -820,13 +824,13 @@
             </objects>
             <point key="canvasLocation" x="-1383.2" y="680.5097451274363"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Wishlist-->
         <scene sceneID="eDR-jV-Nap">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="3" systemItem="mostRecent" id="Rpd-Ld-hRe"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="greenDotIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -839,13 +843,13 @@
             </objects>
             <point key="canvasLocation" x="-1383" y="1506"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cart-->
         <scene sceneID="X0d-SA-HLU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="4" systemItem="downloads" id="Mif-R8-oti"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Cart" image="redDotIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -863,7 +867,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -878,9 +882,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blueDotIcon" width="25" height="25"/>
         <image name="facebookIconImage" width="337" height="140"/>
         <image name="googlePlusIconImage" width="337" height="140"/>
+        <image name="greenDotIcon" width="25" height="25"/>
+        <image name="hamburgerMenuButtonIcon" width="22" height="22"/>
         <image name="lolyhubLogo" width="318" height="136"/>
+        <image name="redDotIcon" width="25" height="25"/>
+        <image name="searchTabBarICon" width="25" height="25"/>
         <image name="twitterIconImage" width="337" height="140"/>
+        <image name="yellowDotIcon" width="25" height="25"/>
     </resources>
 </document>

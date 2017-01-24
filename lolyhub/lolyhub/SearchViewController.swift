@@ -10,9 +10,11 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addSideMenuFunctionality(to: sideMenuButton, on: self)
         // Do any additional setup after loading the view.
     }
 
