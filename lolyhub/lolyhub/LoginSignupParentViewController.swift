@@ -35,7 +35,7 @@ class LoginSignupParentViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) { 
         super.viewWillDisappear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }

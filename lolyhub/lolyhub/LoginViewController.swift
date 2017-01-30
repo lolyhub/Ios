@@ -34,7 +34,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
         
         self.usernameTextField.stylePrimaryTextField()
-        self.passwordTextField.stylePrimaryTextField()
+      //  self.passwordTextField.stylePrimaryTextField()
+        
+        self.passwordTextField.stylePasswordHelperTextField()
+        
+//        let rightImageView = UIImageView()
+//        rightImageView.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+//        let passwordHelpImage = UIImage(named: "passwordHelpIcon")
+//        rightImageView.image = passwordHelpImage
+//        self.passwordTextField.rightViewMode = UITextFieldViewMode.always
+//        self.passwordTextField.rightView = rightImageView
+        
+        
         
     }
 

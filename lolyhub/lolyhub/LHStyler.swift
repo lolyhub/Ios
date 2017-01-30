@@ -26,5 +26,17 @@ extension UITextField {
 
     }
     
+    func stylePasswordHelperTextField() {
+        
+        self.layer.borderColor = LolyHubStyler.primaryTextFieldBorderColor.cgColor
+        self.layer.borderWidth = 1
+        let rightImageView = UIImageView()
+        rightImageView.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        let passwordHelpImage = UIImage(named: "passwordHelpIcon")
+        rightImageView.image = passwordHelpImage
+        self.rightViewMode = UITextFieldViewMode.always
+        self.rightView = rightImageView
+
+    }
     
 }

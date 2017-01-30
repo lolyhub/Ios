@@ -167,7 +167,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget your password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-rJ-Rfw">
-                                <rect key="frame" x="8" y="255" width="153" height="21"/>
+                                <rect key="frame" x="8" y="255" width="155" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="v9U-rH-Siy"/>
                                 </constraints>
@@ -176,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fks-pw-Uwd">
-                                <rect key="frame" x="180" y="250" width="76" height="33"/>
+                                <rect key="frame" x="182" y="250" width="74" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DmR-3W-tdv"/>
                                 </constraints>
@@ -432,13 +432,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe for Lolyhub newsletter " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-aa-ySU">
-                                                <rect key="frame" x="15" y="557" width="250" height="40"/>
+                                                <rect key="frame" x="15" y="557" width="249.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.35401895639999997" green="0.3543119133" blue="0.35406431560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-QY-z9r">
-                                                <rect key="frame" x="273" y="562" width="51" height="31"/>
+                                                <rect key="frame" x="272.5" y="562" width="51" height="31"/>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-pa-aex">
                                                 <rect key="frame" x="15" y="737" width="110" height="46"/>
