@@ -31,6 +31,7 @@ class LoginSignupParentViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -54,7 +55,6 @@ class LoginSignupParentViewController: UIViewController {
         
     }
     
-
     /*
     // MARK: - Navigation
 

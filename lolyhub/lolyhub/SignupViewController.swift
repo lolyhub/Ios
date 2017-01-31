@@ -26,6 +26,10 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var mobileNumberTextField: UITextField!
 
     
+    @IBOutlet weak var genderMaleButton: UIButton!
+    @IBOutlet weak var genderFemaleButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +48,11 @@ class SignupViewController: UIViewController {
         self.title = "Sign Up"
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
+        
+        self.genderMaleButton.layer.borderColor = UIColor(red: 197/255.0, green: 198/255.0, blue: 197/255.0, alpha: 1).cgColor
+        self.genderFemaleButton.layer.borderColor = UIColor(red: 197/255.0, green: 198/255.0, blue: 197/255.0, alpha: 1).cgColor
+        
+        
         
     }
     
