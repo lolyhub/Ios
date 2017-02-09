@@ -1,44 +1,22 @@
 //
-//  HomeViewController.swift
+//  ProductDetailViewController.swift
 //  lolyhub
 //
-//  Created by webwerks on 1/12/17.
+//  Created by webwerks on 2/9/17.
 //  Copyright © 2017 webwerks. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ProductDetailViewController: UIViewController {
 
-    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       //side menu setup
-        addSideMenuFunctionality(to: sideMenuButton, on: self)
-        
+
+        print("detail page screen")
         // Do any additional setup after loading the view.
     }
 
-
-    @IBAction func sideMenuButtonClicked(_ sender: Any) {
-        
-        print("hello")
-        
-        if self.revealViewController() != nil {
-        }
-        
-    }
-    
-    
-    @IBAction func watchesClicked(_ sender: Any) {
-        
-        let productListView = UIStoryboard.productListViewController()
-        self.navigationController?.pushViewController(productListView, animated: true)
-    }
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

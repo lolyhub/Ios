@@ -31,6 +31,8 @@
 		E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978C3E71E23B2F600B73BF6 /* LHStyler.swift */; };
 		E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */; };
 		E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */; };
+		E9B50C1C1E4C70FD0054A02D /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B50C1B1E4C70FD0054A02D /* ProductListViewController.swift */; };
+		E9B50C1E1E4C71AB0054A02D /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B50C1D1E4C71AB0054A02D /* ProductDetailViewController.swift */; };
 		E9EE04121E360580006C85FD /* LHUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE04111E360580006C85FD /* LHUtils.swift */; };
 		E9EE041E1E361022006C85FD /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9EE04141E360ED0006C85FD /* OpenSans-Bold.ttf */; };
 		E9EE041F1E361022006C85FD /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9EE04151E360ED0006C85FD /* OpenSans-BoldItalic.ttf */; };
@@ -96,6 +98,8 @@
 		E9A92BC01E2B57E600A0DBFF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E9A92BC31E2B5C2800A0DBFF /* CommonMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		E9B50C1B1E4C70FD0054A02D /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		E9B50C1D1E4C71AB0054A02D /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		E9EE04111E360580006C85FD /* LHUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHUtils.swift; sourceTree = "<group>"; };
 		E9EE04141E360ED0006C85FD /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		E9EE04151E360ED0006C85FD /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -152,7 +156,7 @@
 			name = TabBarController;
 			sourceTree = "<group>";
 		};
-		E9367F981E27826100199726 /* ViewControllers */ = {
+		E9367F981E27826100199726 /* TabBarViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				E9367FA31E27834400199726 /* HomeViewController.swift */,
@@ -161,7 +165,7 @@
 				E9367F9F1E27832F00199726 /* WishListViewController.swift */,
 				E9367FA11E27833A00199726 /* CartViewController.swift */,
 			);
-			name = ViewControllers;
+			name = TabBarViewControllers;
 			sourceTree = "<group>";
 		};
 		E978C39D1E236B3F00B73BF6 = {
@@ -197,7 +201,8 @@
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
 				E978C3E41E23B2C300B73BF6 /* Utilities */,
-				E9367F981E27826100199726 /* ViewControllers */,
+				E9367F981E27826100199726 /* TabBarViewControllers */,
+				E9B50C1A1E4C70A70054A02D /* ProductFlow */,
 				E978C3DD1E2388A700B73BF6 /* LoginSignup */,
 				E9367F951E2781DB00199726 /* TabBarController */,
 			);
@@ -254,6 +259,15 @@
 				E9A92BC11E2B57E600A0DBFF /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		E9B50C1A1E4C70A70054A02D /* ProductFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E9B50C1B1E4C70FD0054A02D /* ProductListViewController.swift */,
+				E9B50C1D1E4C71AB0054A02D /* ProductDetailViewController.swift */,
+			);
+			name = ProductFlow;
 			sourceTree = "<group>";
 		};
 		E9EE04131E360EB5006C85FD /* Fonts */ = {
@@ -490,11 +504,13 @@
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
 				E9EE04121E360580006C85FD /* LHUtils.swift in Sources */,
 				E978C3AA1E236B3F00B73BF6 /* AppDelegate.swift in Sources */,
+				E9B50C1C1E4C70FD0054A02D /* ProductListViewController.swift in Sources */,
 				E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */,
 				E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */,
 				E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */,
 				E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */,
 				E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */,
+				E9B50C1E1E4C71AB0054A02D /* ProductDetailViewController.swift in Sources */,
 				E9367FA01E27832F00199726 /* WishListViewController.swift in Sources */,
 				E9367F9C1E2782E200199726 /* SideMenuTableViewController.swift in Sources */,
 			);

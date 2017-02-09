@@ -24,6 +24,14 @@ extension UIStoryboard {
         return mainStoryboard().instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
     }
     
+    class func productListViewController() -> ProductListViewController {
+        return mainStoryboard().instantiateViewController(withIdentifier: "ProductListViewController") as! ProductListViewController
+    }
+    
+    class func productDetailViewController() -> ProductDetailViewController {
+        return mainStoryboard().instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
+    }
+    
 }
 
 extension UIFont{
