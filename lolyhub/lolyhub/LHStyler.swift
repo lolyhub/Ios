@@ -25,7 +25,6 @@ class LolyHubStyler{
     static let hamburgerMenuButtonIconImageName = "hamburgerMenuButtonIcon"
     
     
-    
 
 }
 

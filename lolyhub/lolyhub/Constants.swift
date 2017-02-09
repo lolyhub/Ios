@@ -14,3 +14,11 @@ enum LHViewControllers: String {
     case SignUpViewController = "SignupViewController"
     case LoginViewController = "LoginViewController"
 }
+
+
+class LHCellIdefntifiers {
+    
+    //Cell identifiers
+    static let productTableViewCellIdentifier = "ProductTableViewCell"
+    
+}

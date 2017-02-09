@@ -8,25 +8,56 @@
 
 import UIKit
 
-class ProductListViewController: UIViewController {
+class ProductListViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var productListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupView()
         print("product list view")
         // Do any additional setup after loading the view.
     }
 
+    func setupView() {
+        
+        self.productListTableView.register(UINib.init(nibName: LHCellIdefntifiers.productTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func detailClicked(_ sender: Any) {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 4
         
-        let detailView = UIStoryboard.productDetailViewController()
-        self.navigationController?.pushViewController(detailView, animated: true)
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : ProductTableViewCell = self.productListTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
         
+        // Configure the cell...
+        
+        cell.descriptionLabel.text = "Hello"
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
     }
     
     
