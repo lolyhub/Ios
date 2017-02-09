@@ -16,7 +16,7 @@ class LoginSignupParentViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var contentView: UIView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
         setupView()
         

@@ -14,6 +14,18 @@ class LolyHubStyler{
     
     //UITextField Colors
     static let primaryTextFieldBorderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+    
+    
+    
+    
+    
+    
+    
+    //Images and Icons
+    static let hamburgerMenuButtonIconImageName = "hamburgerMenuButtonIcon"
+    
+    
+    
 
 }
 
