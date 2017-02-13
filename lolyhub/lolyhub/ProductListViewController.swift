@@ -50,14 +50,14 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
         // Configure the cell...
         
-        cell.descriptionLabel.text = "Hello"
+        //cell.descriptionLabel.text = "Hello"
         
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 350
     }
     
     

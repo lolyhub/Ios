@@ -5,28 +5,60 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="lolyhub" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="349"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sagar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-p5-b50">
-                        <rect key="frame" x="139" y="11" width="43" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRW-jM-NTd">
+                        <rect key="frame" x="8" y="8" width="304" height="333"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchSample" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-ME-UCh">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200.5" id="gip-Ti-OsT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-p5-b50">
+                                <rect key="frame" x="8" y="208" width="288" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="9yQ-Q0-llQ"/>
+                                </constraints>
+                                <string key="text">Your fitness choise , 3 monthes VIP subsciptions in body masters all VIP branches, for male only this ffer will be valid till 30 / 12 / 2017</string>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qCx-ME-UCh" secondAttribute="trailing" id="15x-J3-Uz5"/>
+                            <constraint firstItem="ZTv-p5-b50" firstAttribute="top" secondItem="qCx-ME-UCh" secondAttribute="bottom" constant="7.5" id="EPL-sV-Bja"/>
+                            <constraint firstItem="qCx-ME-UCh" firstAttribute="top" secondItem="wRW-jM-NTd" secondAttribute="top" id="RIc-8G-hTw"/>
+                            <constraint firstItem="ZTv-p5-b50" firstAttribute="leading" secondItem="wRW-jM-NTd" secondAttribute="leading" constant="8" id="WGs-X1-Unv"/>
+                            <constraint firstItem="qCx-ME-UCh" firstAttribute="leading" secondItem="wRW-jM-NTd" secondAttribute="leading" id="cvO-yR-bJa"/>
+                            <constraint firstAttribute="trailing" secondItem="ZTv-p5-b50" secondAttribute="trailing" constant="8" id="u7J-I6-jdi"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ZTv-p5-b50" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aS9-uh-hW8"/>
-                    <constraint firstItem="ZTv-p5-b50" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xAx-90-QJa"/>
+                    <constraint firstItem="wRW-jM-NTd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XwV-Rl-Z6d"/>
+                    <constraint firstItem="wRW-jM-NTd" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="b6h-bu-kh1"/>
+                    <constraint firstItem="wRW-jM-NTd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bbE-Mr-d6U"/>
+                    <constraint firstItem="wRW-jM-NTd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="t6y-B0-PBE"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -34,4 +66,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="watchSample" width="294" height="159"/>
+    </resources>
 </document>
