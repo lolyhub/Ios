@@ -10,13 +10,17 @@ import UIKit
 
 class ProductListViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var productListLayoutButton: UIButton!
     @IBOutlet weak var productListTableView: UITableView!
     
+    @IBOutlet weak var productListFilterButton: UIButton!
+    var isLayoutTable : Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
         print("product list view")
+        isLayoutTable = true
         // Do any additional setup after loading the view.
     }
 
@@ -59,6 +63,22 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+    
+    @IBAction func productListLayoutButtonClicked(_ sender: Any) {
+        if(isLayoutTable) {
+            self.productListLayoutButton.setImage(UIImage.init(named: "productListCollectionIcon"), for: UIControlState.normal)
+            isLayoutTable = false
+        }
+        else {
+            self.productListLayoutButton.setImage(UIImage.init(named: "productListTableIcon"), for: UIControlState.normal)
+            isLayoutTable = true
+        }
+    }
+    
+    @IBAction func productListFilterButtonClicked(_ sender: Any) {
+        print("filter button clicked")
+    }
+    
     
     
 

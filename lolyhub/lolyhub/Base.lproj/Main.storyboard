@@ -806,6 +806,9 @@
                                             <constraint firstAttribute="width" constant="45" id="WhE-9d-d7d"/>
                                         </constraints>
                                         <state key="normal" image="productListTableIcon"/>
+                                        <connections>
+                                            <action selector="productListLayoutButtonClicked:" destination="ydT-7t-t4I" eventType="touchUpInside" id="qAH-Qb-7dw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POG-oG-6PD">
                                         <rect key="frame" x="337" y="10" width="30" height="40"/>
@@ -813,6 +816,9 @@
                                             <constraint firstAttribute="width" constant="30" id="9M2-vv-6th"/>
                                         </constraints>
                                         <state key="normal" image="productListFilterIcon"/>
+                                        <connections>
+                                            <action selector="productListFilterButtonClicked:" destination="ydT-7t-t4I" eventType="touchUpInside" id="AOd-hQ-YyK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97592383623123169" green="0.97666221857070923" blue="0.97603815793991089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -849,6 +855,8 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="productListFilterButton" destination="POG-oG-6PD" id="jH6-Zx-XVw"/>
+                        <outlet property="productListLayoutButton" destination="qJ5-DA-aFN" id="cXs-o6-HTh"/>
                         <outlet property="productListTableView" destination="81k-ec-bsx" id="xbf-xw-G2a"/>
                     </connections>
                 </viewController>
