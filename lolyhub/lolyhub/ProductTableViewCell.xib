@@ -141,7 +141,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="cartButton" destination="ADc-HT-Nc5" id="nBV-Wr-wwz"/>
                 <outlet property="descriptionLabel" destination="ZTv-p5-b50" id="2ze-rQ-tSL"/>
+                <outlet property="wishButton" destination="AlM-3t-jWZ" id="DCh-h8-pHT"/>
             </connections>
         </tableViewCell>
     </objects>

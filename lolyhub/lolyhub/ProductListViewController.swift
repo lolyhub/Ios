@@ -12,9 +12,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
 
     @IBOutlet weak var productListLayoutButton: UIButton!
     @IBOutlet weak var productListTableView: UITableView!
-    
     @IBOutlet weak var productListFilterButton: UIButton!
+    var productTableViewCell :ProductTableViewCell!
     var isLayoutTable : Bool = true
+    var isAddedToCart : Bool = false
+    var isAddedToWishList : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,14 +53,18 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : ProductTableViewCell = self.productListTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
+        self.productTableViewCell = self.productListTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
         
         // Configure the cell...
+ 
+        self.productTableViewCell.cartButton.addTarget(self, action: #selector(self.addToCartButtonClicked(sender:)), for: .touchUpInside)
+        self.productTableViewCell.cartButton.tag = indexPath.row
         
-        //cell.descriptionLabel.text = "Hello"
+        self.productTableViewCell.wishButton.addTarget(self, action: #selector(self.addToWishListButtonClicked(sender:)), for: .touchUpInside)
+        self.productTableViewCell.wishButton.tag = indexPath.row
         
         
-        return cell
+        return self.productTableViewCell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -66,11 +73,11 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     @IBAction func productListLayoutButtonClicked(_ sender: Any) {
         if(isLayoutTable) {
-            self.productListLayoutButton.setImage(UIImage.init(named: "productListCollectionIcon"), for: UIControlState.normal)
+            self.productListLayoutButton.setImage(UIImage.init(named:LolyHubStyler.productListCollectionIconImageName ), for: UIControlState.normal)
             isLayoutTable = false
         }
         else {
-            self.productListLayoutButton.setImage(UIImage.init(named: "productListTableIcon"), for: UIControlState.normal)
+            self.productListLayoutButton.setImage(UIImage.init(named: LolyHubStyler.productListTableIconImageName), for: UIControlState.normal)
             isLayoutTable = true
         }
     }
@@ -79,7 +86,36 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         print("filter button clicked")
     }
     
+    func addToCartButtonClicked(sender :UIButton) {
+        
+        /*
+        let point = self.productListTableView.convert(CGPoint.zero, from: sender)
+        
+        if let indexP = self.productListTableView.indexPathForRow(at: point) {
+            // Do something with indexPath
+            self.productTableViewCell = self.productListTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for:indexP ) as! ProductTableViewCell
+            if(isAddedToCart) {
+                
+                self.productTableViewCell.cartButton.setImage(UIImage(named:LolyHubStyler.cartNotSelectedIconImageName), for: .normal)
+                isAddedToCart = false
+            }
+            else {
+                //cell.cartButton.setImage(UIImage.init(named: LolyHubStyler.cartSelectedIconImageName), for: .normal)
+                isAddedToCart = true
+                
+                self.productTableViewCell.cartButton.setImage(UIImage(named:LolyHubStyler.cartSelectedIconImageName), for: .normal)
+                
+            }
+        }
+        */
+        
+        print("added to cart: product at indexPath.row = \(sender.tag)")
+        
+    }
     
+    func addToWishListButtonClicked(sender :UIButton) {
+        print("added to wishList: product at indexPath.row = \(sender.tag)" )
+    }
     
 
     /*

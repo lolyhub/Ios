@@ -23,6 +23,12 @@ class LolyHubStyler{
     
     //Images and Icons
     static let hamburgerMenuButtonIconImageName = "hamburgerMenuButtonIcon"
+    static let productListCollectionIconImageName = "productListCollectionIcon"
+    static let productListTableIconImageName = "productListTableIcon"
+    static let cartNotSelectedIconImageName = "cartNotSelected"
+    static let cartSelectedIconImageName = "cartSelected"
+    static let wishNotSelectedIconImageName = "wishNotSelected"
+    static let wishSelectedIconImageName = "wishSelected"
     
     
 

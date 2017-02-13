@@ -9,6 +9,10 @@
 import UIKit
 
 class ProductTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var cartButton: UIButton!
+    
+    @IBOutlet weak var wishButton: UIButton!
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
