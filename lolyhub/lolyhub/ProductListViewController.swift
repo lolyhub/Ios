@@ -37,7 +37,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         self.productListTableView = UITableView(frame: productListParentView.bounds, style: UITableViewStyle.plain)
         self.productListTableView?.delegate = self
         self.productListTableView?.dataSource = self
-     //   self.productListParentView.addSubview(self.productListTableView!)
+        self.productListParentView.addSubview(self.productListTableView!)
         
         let productCollectionLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         productCollectionLayout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 0, right: 1)
@@ -47,7 +47,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         self.productListCollectionView?.delegate = self
         self.productListCollectionView?.dataSource = self
         self.productListCollectionView?.backgroundColor = UIColor.white
-        self.productListParentView.addSubview(self.productListCollectionView!)
+     //   self.productListParentView.addSubview(self.productListCollectionView!)
         
         self.productListCollectionView?.register(UINib.init(nibName: LHCellIdefntifiers.productCollectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier)
         
@@ -113,13 +113,53 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     
     @IBAction func productListLayoutButtonClicked(_ sender: Any) {
+        
+        
+        var fromView: UIView?
+        var toView: UIView?
+        
+        
         if(isLayoutTable) {
             self.productListLayoutButton.setImage(UIImage.init(named:LolyHubStyler.productListCollectionIconImageName ), for: UIControlState.normal)
             isLayoutTable = false
+            
+            fromView = self.productListTableView
+            toView = self.productListCollectionView
+            
+            fromView?.removeFromSuperview()
+            toView?.frame = self.view.bounds
+            
+           // self.productListParentView.addSubview(toView!)
+            
+            //  Converted with Swiftify v1.0.6242 - https://objectivec2swift.com/
+           // UIView.transition(from: fromView!, to: toView!, duration: 0.25, options: .flipFromRight, completion: { _ in })
+            
+  
+            
+//            UIView.transition(from: fromView!, to: toView!, duration: 2, options: .transitionFlipFromBottom, completion: { (_) in
+//                self.productListParentView.addSubview(toView!)
+//            })
+            
+            UIView.transition(with: self.productListParentView, duration: 0.5, options: .transitionFlipFromBottom,
+                                      animations: {self.productListParentView.addSubview(toView!)}, completion: nil)
+            
+
+            
         }
         else {
             self.productListLayoutButton.setImage(UIImage.init(named: LolyHubStyler.productListTableIconImageName), for: UIControlState.normal)
             isLayoutTable = true
+            
+            toView = self.productListTableView
+            fromView = self.productListCollectionView
+            
+            fromView?.removeFromSuperview()
+            toView?.frame = self.view.bounds
+            
+//            self.productListParentView.addSubview(toView!)
+            
+            UIView.transition(with: self.productListParentView, duration: 0.5, options: .transitionFlipFromBottom,
+                              animations: {self.productListParentView.addSubview(toView!)}, completion: nil)
         }
     }
     
