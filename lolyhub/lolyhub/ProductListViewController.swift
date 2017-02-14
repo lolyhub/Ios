@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ProductListViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class ProductListViewController: UIViewController , UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var productListParentView: UIView!
     @IBOutlet weak var productListLayoutButton: UIButton!
-    @IBOutlet weak var productListTableView: UITableView!
+    var productListTableView: UITableView?
+    var productListCollectionView : UICollectionView?
     @IBOutlet weak var productListFilterButton: UIButton!
     var productTableViewCell :ProductTableViewCell!
+    var productCollectionViewCell : ProductCollectionViewCell!
     var isLayoutTable : Bool = true
     var isAddedToCart : Bool = false
     var isAddedToWishList : Bool = false
@@ -29,7 +32,23 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
 
     func setupView() {
         
-        self.productListTableView.register(UINib.init(nibName: LHCellIdefntifiers.productTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier)
+        
+        self.productListTableView = UITableView(frame: productListParentView.bounds, style: UITableViewStyle.plain)
+        self.productListTableView?.delegate = self
+        self.productListTableView?.dataSource = self
+     //   self.productListParentView.addSubview(self.productListTableView!)
+        
+        let productCollectionLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        productCollectionLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+       // productCollectionLayout.itemSize = CGSize(width: 90, height: 120)
+        self.productListCollectionView = UICollectionView(frame: productListParentView.bounds, collectionViewLayout: productCollectionLayout)
+        self.productListCollectionView?.delegate = self
+        self.productListCollectionView?.dataSource = self
+        self.productListParentView.addSubview(self.productListCollectionView!)
+        
+        self.productListCollectionView?.register(UINib.init(nibName: LHCellIdefntifiers.productCollectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier)
+        
+        self.productListTableView?.register(UINib.init(nibName: LHCellIdefntifiers.productTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier)
         
     }
     override func didReceiveMemoryWarning() {
@@ -53,7 +72,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        self.productTableViewCell = self.productListTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
+        self.productTableViewCell = self.productListTableView?.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
         
         // Configure the cell...
  
@@ -70,6 +89,24 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+    
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        self.productCollectionViewCell = self.productListCollectionView?.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier, for: indexPath) as! ProductCollectionViewCell
+        
+        self.productCollectionViewCell.backgroundColor = UIColor.orange
+        return self.productCollectionViewCell
+        
+    }
+    
     
     @IBAction func productListLayoutButtonClicked(_ sender: Any) {
         if(isLayoutTable) {

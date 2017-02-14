@@ -20,5 +20,6 @@ class LHCellIdefntifiers {
     
     //Cell identifiers
     static let productTableViewCellIdentifier = "ProductTableViewCell"
+    static let productCollectionCellIdentifier = "ProductCollectionViewCell"
     
 }

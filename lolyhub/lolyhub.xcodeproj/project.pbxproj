@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
+		E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */; };
+		E92ADE221E52E0860065C918 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92ADE201E52E0860065C918 /* ProductCollectionViewCell.xib */; };
 		E9367F941E27807D00199726 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F931E27807D00199726 /* SSASideMenu.swift */; };
 		E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F961E27821200199726 /* BaseTabBarController.swift */; };
 		E9367F9A1E27829700199726 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9367F991E27829700199726 /* SearchViewController.swift */; };
@@ -70,6 +72,8 @@
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
+		E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		E92ADE201E52E0860065C918 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9367F931E27807D00199726 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		E9367F961E27821200199726 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		E9367F991E27829700199726 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 			children = (
 				E9B50C201E4C86AD0054A02D /* ProductTableViewCell.swift */,
 				E9B50C211E4C86AD0054A02D /* ProductTableViewCell.xib */,
+				E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */,
+				E92ADE201E52E0860065C918 /* ProductCollectionViewCell.xib */,
 			);
 			name = ProductFlowViews;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				E9EE04211E361022006C85FD /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				E9EE04221E361022006C85FD /* OpenSans-Italic.ttf in Resources */,
 				E9EE04231E361022006C85FD /* OpenSans-Light.ttf in Resources */,
+				E92ADE221E52E0860065C918 /* ProductCollectionViewCell.xib in Resources */,
 				E9EE04241E361022006C85FD /* OpenSans-LightItalic.ttf in Resources */,
 				E9B50C231E4C86AD0054A02D /* ProductTableViewCell.xib in Resources */,
 				E9EE04251E361022006C85FD /* OpenSans-Regular.ttf in Resources */,
@@ -510,6 +517,7 @@
 			files = (
 				E9367F9A1E27829700199726 /* SearchViewController.swift in Sources */,
 				E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */,
+				E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */,
 				E9B50C221E4C86AD0054A02D /* ProductTableViewCell.swift in Sources */,
 				E9367FA21E27833A00199726 /* CartViewController.swift in Sources */,
 				E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */,

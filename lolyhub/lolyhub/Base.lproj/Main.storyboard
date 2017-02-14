@@ -803,7 +803,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-DA-aFN">
                                         <rect key="frame" x="8" y="10" width="45" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="WhE-9d-d7d"/>
+                                            <constraint firstAttribute="width" constant="45" id="FDL-d7-DVt"/>
                                         </constraints>
                                         <state key="normal" image="productListTableIcon"/>
                                         <connections>
@@ -813,7 +813,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POG-oG-6PD">
                                         <rect key="frame" x="337" y="10" width="30" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="9M2-vv-6th"/>
+                                            <constraint firstAttribute="width" constant="30" id="HCO-6r-IDr"/>
                                         </constraints>
                                         <state key="normal" image="productListFilterIcon"/>
                                         <connections>
@@ -823,33 +823,29 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.97592383623123169" green="0.97666221857070923" blue="0.97603815793991089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="POG-oG-6PD" firstAttribute="trailing" secondItem="sBx-xe-0ss" secondAttribute="trailingMargin" id="1Yp-qm-cwT"/>
-                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="leading" secondItem="sBx-xe-0ss" secondAttribute="leadingMargin" id="91O-0X-fxa"/>
-                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="top" secondItem="sBx-xe-0ss" secondAttribute="top" constant="10" id="SMg-I9-aaR"/>
-                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="top" secondItem="POG-oG-6PD" secondAttribute="top" id="Smc-D3-4Mm"/>
-                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="centerY" secondItem="sBx-xe-0ss" secondAttribute="centerY" id="WQX-eq-OPb"/>
-                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="bottom" secondItem="POG-oG-6PD" secondAttribute="bottom" id="qY5-M3-urE"/>
+                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="leading" secondItem="sBx-xe-0ss" secondAttribute="leadingMargin" id="2wv-kA-HGq"/>
+                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="top" secondItem="POG-oG-6PD" secondAttribute="top" id="DZP-YO-jTr"/>
+                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="top" secondItem="sBx-xe-0ss" secondAttribute="top" constant="10" id="OAs-IN-mn6"/>
+                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="centerY" secondItem="sBx-xe-0ss" secondAttribute="centerY" id="eNO-Ud-qzE"/>
+                                    <constraint firstItem="POG-oG-6PD" firstAttribute="trailing" secondItem="sBx-xe-0ss" secondAttribute="trailingMargin" id="mYf-ah-atH"/>
+                                    <constraint firstItem="qJ5-DA-aFN" firstAttribute="bottom" secondItem="POG-oG-6PD" secondAttribute="bottom" id="ofk-mN-2F7"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="81k-ec-bsx">
-                                <rect key="frame" x="0.0" y="121" width="375" height="497"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-nK-Qvf">
+                                <rect key="frame" x="0.0" y="125" width="375" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="ydT-7t-t4I" id="cNJ-zj-oGY"/>
-                                    <outlet property="delegate" destination="ydT-7t-t4I" id="hck-3s-WWU"/>
-                                </connections>
-                            </tableView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="sBx-xe-0ss" secondAttribute="trailing" id="6td-Hg-cOU"/>
-                            <constraint firstItem="sBx-xe-0ss" firstAttribute="trailing" secondItem="81k-ec-bsx" secondAttribute="trailing" id="EEh-sG-zI2"/>
-                            <constraint firstItem="AOA-gq-Rgx" firstAttribute="top" secondItem="sBx-xe-0ss" secondAttribute="bottom" constant="494" id="ERI-ot-bFk"/>
-                            <constraint firstItem="sBx-xe-0ss" firstAttribute="leading" secondItem="v3c-aS-3m6" secondAttribute="leading" id="Ftv-H9-pFG"/>
-                            <constraint firstItem="sBx-xe-0ss" firstAttribute="top" secondItem="rsQ-RT-rbL" secondAttribute="bottom" id="aMt-tw-hwK"/>
-                            <constraint firstItem="81k-ec-bsx" firstAttribute="top" secondItem="rsQ-RT-rbL" secondAttribute="bottom" constant="57" id="cUB-ag-MjZ"/>
-                            <constraint firstItem="81k-ec-bsx" firstAttribute="bottom" secondItem="AOA-gq-Rgx" secondAttribute="top" id="pEU-WW-KaH"/>
-                            <constraint firstItem="sBx-xe-0ss" firstAttribute="leading" secondItem="81k-ec-bsx" secondAttribute="leading" id="qBD-go-MHa"/>
+                            <constraint firstItem="Ht8-nK-Qvf" firstAttribute="top" secondItem="v3c-aS-3m6" secondAttribute="top" constant="125" id="OwO-2S-hko"/>
+                            <constraint firstItem="sBx-xe-0ss" firstAttribute="leading" secondItem="Ht8-nK-Qvf" secondAttribute="leading" id="TC0-gi-0Sv"/>
+                            <constraint firstItem="sBx-xe-0ss" firstAttribute="top" secondItem="rsQ-RT-rbL" secondAttribute="bottom" id="ZAg-54-oJh"/>
+                            <constraint firstItem="sBx-xe-0ss" firstAttribute="trailing" secondItem="Ht8-nK-Qvf" secondAttribute="trailing" id="fVb-bL-JcN"/>
+                            <constraint firstItem="Ht8-nK-Qvf" firstAttribute="bottom" secondItem="AOA-gq-Rgx" secondAttribute="top" id="fuW-1F-mIN"/>
+                            <constraint firstAttribute="trailing" secondItem="sBx-xe-0ss" secondAttribute="trailing" id="g0Q-Na-A4R"/>
+                            <constraint firstItem="Ht8-nK-Qvf" firstAttribute="top" secondItem="sBx-xe-0ss" secondAttribute="bottom" constant="1" id="pFV-gR-Z1C"/>
+                            <constraint firstItem="sBx-xe-0ss" firstAttribute="leading" secondItem="v3c-aS-3m6" secondAttribute="leading" id="uEA-Ip-Xli"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -857,7 +853,7 @@
                     <connections>
                         <outlet property="productListFilterButton" destination="POG-oG-6PD" id="jH6-Zx-XVw"/>
                         <outlet property="productListLayoutButton" destination="qJ5-DA-aFN" id="cXs-o6-HTh"/>
-                        <outlet property="productListTableView" destination="81k-ec-bsx" id="xbf-xw-G2a"/>
+                        <outlet property="productListParentView" destination="Ht8-nK-Qvf" id="MWv-VT-4Dv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwl-tv-RnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
