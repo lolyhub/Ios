@@ -105,8 +105,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         self.productCollectionViewCell = self.productListCollectionView?.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier, for: indexPath) as! ProductCollectionViewCell
-        
-       // self.productCollectionViewCell.backgroundColor = UIColor.orange
+
         return self.productCollectionViewCell
         
     }
@@ -128,23 +127,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
             
             fromView?.removeFromSuperview()
             toView?.frame = self.view.bounds
-            
-           // self.productListParentView.addSubview(toView!)
-            
-            //  Converted with Swiftify v1.0.6242 - https://objectivec2swift.com/
-           // UIView.transition(from: fromView!, to: toView!, duration: 0.25, options: .flipFromRight, completion: { _ in })
-            
   
-            
-//            UIView.transition(from: fromView!, to: toView!, duration: 2, options: .transitionFlipFromBottom, completion: { (_) in
-//                self.productListParentView.addSubview(toView!)
-//            })
-            
-            UIView.transition(with: self.productListParentView, duration: 0.5, options: .transitionFlipFromBottom,
-                                      animations: {self.productListParentView.addSubview(toView!)}, completion: nil)
-            
-
-            
         }
         else {
             self.productListLayoutButton.setImage(UIImage.init(named: LolyHubStyler.productListTableIconImageName), for: UIControlState.normal)
@@ -156,11 +139,11 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
             fromView?.removeFromSuperview()
             toView?.frame = self.view.bounds
             
-//            self.productListParentView.addSubview(toView!)
-            
-            UIView.transition(with: self.productListParentView, duration: 0.5, options: .transitionFlipFromBottom,
-                              animations: {self.productListParentView.addSubview(toView!)}, completion: nil)
         }
+        
+        UIView.transition(with: self.productListParentView, duration: 0.5, options: .transitionFlipFromRight,
+                          animations: {self.productListParentView.addSubview(toView!)}, completion: nil)
+        
     }
     
     @IBAction func productListFilterButtonClicked(_ sender: Any) {
