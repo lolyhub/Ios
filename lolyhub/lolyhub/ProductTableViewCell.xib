@@ -29,10 +29,10 @@
                         <rect key="frame" x="8" y="8" width="304" height="333"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchSample" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-ME-UCh">
-                                <rect key="frame" x="0.0" y="0.0" width="304" height="201"/>
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="203"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-p5-b50">
-                                <rect key="frame" x="8" y="208" width="288" height="45"/>
+                                <rect key="frame" x="8" y="210" width="288" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="37T-kY-ueD"/>
                                 </constraints>
@@ -42,18 +42,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-HT-Nc5">
-                                <rect key="frame" x="191" y="259" width="25" height="25"/>
+                                <rect key="frame" x="191" y="261" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Rlv-a5-mlL"/>
                                 </constraints>
                                 <state key="normal" image="cartSelected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlM-3t-jWZ">
-                                <rect key="frame" x="191" y="291" width="25" height="25"/>
+                                <rect key="frame" x="191" y="293" width="25" height="23"/>
                                 <state key="normal" image="wishNotSelected"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="CART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X56-G6-uPb">
-                                <rect key="frame" x="219" y="261" width="65" height="21"/>
+                                <rect key="frame" x="219" y="263" width="65" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="BSi-ra-BTW"/>
                                 </constraints>
@@ -62,13 +62,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WISHLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0df-Vq-fj5">
-                                <rect key="frame" x="219" y="293" width="65" height="21"/>
+                                <rect key="frame" x="219" y="295" width="65" height="19"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Redeem for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5g-bv-ChJ">
-                                <rect key="frame" x="41" y="261" width="71" height="21"/>
+                                <rect key="frame" x="41" y="263" width="68" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3DS-or-wme"/>
                                 </constraints>
@@ -77,19 +77,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2833 LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNv-G4-Wkc">
-                                <rect key="frame" x="121" y="261" width="48" height="21"/>
+                                <rect key="frame" x="118" y="263" width="49" height="21"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="0.52939248085021973" green="0.76452809572219849" blue="0.24986833333969116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Earning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvd-AH-t3J">
-                                <rect key="frame" x="41" y="291" width="71" height="21"/>
+                                <rect key="frame" x="41" y="293" width="68" height="19"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2833 +LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWM-pe-eKq">
-                                <rect key="frame" x="121" y="293" width="56" height="21"/>
+                                <rect key="frame" x="118" y="295" width="56" height="19"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="0.97553032636642456" green="0.67832010984420776" blue="0.11599240452051163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

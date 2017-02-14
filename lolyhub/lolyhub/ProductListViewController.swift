@@ -41,7 +41,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
         let productCollectionLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         productCollectionLayout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 0, right: 1)
-        productCollectionLayout.itemSize = CGSize(width: 180, height: 300)
+        productCollectionLayout.itemSize = CGSize(width: 180, height: 310)
         
         self.productListCollectionView = UICollectionView(frame: productListParentView.bounds, collectionViewLayout: productCollectionLayout)
         self.productListCollectionView?.delegate = self
@@ -106,7 +106,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         self.productCollectionViewCell = self.productListCollectionView?.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier, for: indexPath) as! ProductCollectionViewCell
         
-        self.productCollectionViewCell.backgroundColor = UIColor.orange
+       // self.productCollectionViewCell.backgroundColor = UIColor.orange
         return self.productCollectionViewCell
         
     }
