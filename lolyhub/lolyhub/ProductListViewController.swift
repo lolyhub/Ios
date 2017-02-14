@@ -33,22 +33,26 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     func setupView() {
         
         
+        
         self.productListTableView = UITableView(frame: productListParentView.bounds, style: UITableViewStyle.plain)
         self.productListTableView?.delegate = self
         self.productListTableView?.dataSource = self
      //   self.productListParentView.addSubview(self.productListTableView!)
         
         let productCollectionLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        productCollectionLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-       // productCollectionLayout.itemSize = CGSize(width: 90, height: 120)
+        productCollectionLayout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 0, right: 1)
+        productCollectionLayout.itemSize = CGSize(width: 180, height: 300)
+        
         self.productListCollectionView = UICollectionView(frame: productListParentView.bounds, collectionViewLayout: productCollectionLayout)
         self.productListCollectionView?.delegate = self
         self.productListCollectionView?.dataSource = self
+        self.productListCollectionView?.backgroundColor = UIColor.white
         self.productListParentView.addSubview(self.productListCollectionView!)
         
         self.productListCollectionView?.register(UINib.init(nibName: LHCellIdefntifiers.productCollectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier)
         
         self.productListTableView?.register(UINib.init(nibName: LHCellIdefntifiers.productTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier)
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -65,7 +69,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 8
         
     }
     
@@ -96,7 +100,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
