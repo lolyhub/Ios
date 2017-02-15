@@ -30,9 +30,8 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - SETUPVIEW METHOD
     func setupView() {
-        
-        
         
         self.productListTableView = UITableView(frame: productListParentView.bounds, style: UITableViewStyle.plain)
         self.productListTableView?.delegate = self
@@ -47,14 +46,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         self.productListCollectionView?.delegate = self
         self.productListCollectionView?.dataSource = self
         self.productListCollectionView?.backgroundColor = UIColor.white
-     //   self.productListParentView.addSubview(self.productListCollectionView!)
         
         self.productListCollectionView?.register(UINib.init(nibName: LHCellIdefntifiers.productCollectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.productCollectionCellIdentifier)
         
         self.productListTableView?.register(UINib.init(nibName: LHCellIdefntifiers.productTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier)
-        
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,14 +63,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
     }
     
     
-    
+    // MARK: - TABLEVIEW DELEGATE DATASOURCE METHODS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 8
         
     }
-    
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         self.productTableViewCell = self.productListTableView?.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.productTableViewCellIdentifier, for: indexPath) as! ProductTableViewCell
@@ -85,6 +80,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
         self.productTableViewCell.wishButton.addTarget(self, action: #selector(self.addToWishListButtonClicked(sender:)), for: .touchUpInside)
         self.productTableViewCell.wishButton.tag = indexPath.row
+        self.productTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
         
         
         return self.productTableViewCell
@@ -94,7 +90,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         return 350
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailView = UIStoryboard.productDetailViewController()
+        self.navigationController?.pushViewController(detailView, animated: true)
+    }
     
+    // MARK: - COLLECTIONVIEW DELEGATE DATASOURCE METHODS
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -110,7 +111,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailView = UIStoryboard.productDetailViewController()
+        self.navigationController?.pushViewController(detailView, animated: true)
+    }
     
+    // MARK: - PRODUCT LIST TOGGLE BUTTON
     @IBAction func productListLayoutButtonClicked(_ sender: Any) {
         
         
@@ -146,10 +152,12 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
     }
     
+    // MARK: - PRODUCT LIST FILTER BUTTON
     @IBAction func productListFilterButtonClicked(_ sender: Any) {
         print("filter button clicked")
     }
     
+    // MARK: - PRODUCT LIST ADD TO CART BUTTON
     func addToCartButtonClicked(sender :UIButton) {
         
         /*
@@ -177,6 +185,7 @@ class ProductListViewController: UIViewController , UITableViewDelegate, UITable
         
     }
     
+    // MARK: - PRODUCT LIST ADD TO WISHLIST BUTTON
     func addToWishListButtonClicked(sender :UIButton) {
         print("added to wishList: product at indexPath.row = \(sender.tag)" )
     }
