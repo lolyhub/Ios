@@ -17,10 +17,6 @@ class LolyHubStyler{
     
     
     
-    
-    
-    
-    
     //Images and Icons
     static let hamburgerMenuButtonIconImageName = "hamburgerMenuButtonIcon"
     static let productListCollectionIconImageName = "productListCollectionIcon"
@@ -29,7 +25,6 @@ class LolyHubStyler{
     static let cartSelectedIconImageName = "cartSelected"
     static let wishNotSelectedIconImageName = "wishNotSelected"
     static let wishSelectedIconImageName = "wishSelected"
-    
     
 
 }

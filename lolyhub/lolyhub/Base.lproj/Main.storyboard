@@ -956,16 +956,65 @@
                                     <constraint firstAttribute="bottom" secondItem="tHV-eI-k2Q" secondAttribute="bottom" id="zne-u0-dlw"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lolyhubColorBar" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-Ya-PiE">
+                                <rect key="frame" x="16" y="440" width="343" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="zNB-xB-Ayt"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU6-dz-9vo">
+                                <rect key="frame" x="16" y="452" width="343" height="158"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-nI-xkr">
+                                        <rect key="frame" x="0.0" y="123" width="343" height="35"/>
+                                        <color key="backgroundColor" red="0.44534021615982056" green="0.68551617860794067" blue="0.16160374879837036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="j0e-ef-AQK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                        <state key="normal" title="REDEEM">
+                                            <color key="titleColor" red="0.97638529539999996" green="0.97652524709999999" blue="0.97635477780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hublot Ferrari luxury watch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-11-4fK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                                        <color key="backgroundColor" red="0.97638529539108276" green="0.97652524709701538" blue="0.97635477781295776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="d8l-nW-6vu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h2d-11-4fK" firstAttribute="top" secondItem="cU6-dz-9vo" secondAttribute="top" id="1ng-Ng-iWX"/>
+                                    <constraint firstAttribute="bottom" secondItem="BCQ-nI-xkr" secondAttribute="bottom" id="Phy-tD-rKl"/>
+                                    <constraint firstAttribute="trailing" secondItem="h2d-11-4fK" secondAttribute="trailing" id="Rq9-iz-6rP"/>
+                                    <constraint firstAttribute="trailing" secondItem="BCQ-nI-xkr" secondAttribute="trailing" id="XfO-tO-M4e"/>
+                                    <constraint firstAttribute="height" constant="158" id="bYH-hD-hTU"/>
+                                    <constraint firstItem="h2d-11-4fK" firstAttribute="leading" secondItem="cU6-dz-9vo" secondAttribute="leading" id="hA2-kO-cGt"/>
+                                    <constraint firstItem="BCQ-nI-xkr" firstAttribute="leading" secondItem="cU6-dz-9vo" secondAttribute="leading" id="t3y-LR-y15"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cU6-dz-9vo" firstAttribute="trailing" secondItem="m5U-tZ-IL4" secondAttribute="trailingMargin" id="6lW-Hy-wqL"/>
+                            <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="STJ-Ya-PiE" secondAttribute="bottom" constant="174" id="9Q4-Gw-o6x"/>
+                            <constraint firstItem="STJ-Ya-PiE" firstAttribute="trailing" secondItem="m5U-tZ-IL4" secondAttribute="trailingMargin" id="MgR-bV-06Q"/>
+                            <constraint firstItem="STJ-Ya-PiE" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leadingMargin" id="Muy-iO-JOC"/>
                             <constraint firstItem="6Lh-ZX-RGi" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leading" id="OJo-X4-yeq"/>
                             <constraint firstAttribute="trailing" secondItem="6Lh-ZX-RGi" secondAttribute="trailing" id="OOr-iF-Q8P"/>
+                            <constraint firstItem="cU6-dz-9vo" firstAttribute="top" secondItem="STJ-Ya-PiE" secondAttribute="bottom" constant="8" id="Uxo-IJ-fV9"/>
                             <constraint firstAttribute="trailing" secondItem="jQs-Jy-qjn" secondAttribute="trailing" id="aWH-9o-Qvw"/>
+                            <constraint firstItem="cU6-dz-9vo" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leadingMargin" id="d1h-rm-21F"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="top" secondItem="jU2-ga-3mY" secondAttribute="bottom" id="dLf-4I-NNl"/>
                             <constraint firstItem="6Lh-ZX-RGi" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="8" id="l6W-Kv-42K"/>
                             <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="bottom" constant="186" id="oxF-dT-kYc"/>
+                            <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="cU6-dz-9vo" secondAttribute="bottom" constant="8" id="qEh-4q-FDT"/>
                             <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="504" id="v6A-Ju-mck"/>
+                            <constraint firstItem="STJ-Ya-PiE" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="bottom" constant="8" id="vOT-ey-ERY"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leading" id="xDY-F4-MdL"/>
                         </constraints>
                     </view>
@@ -1148,6 +1197,7 @@
         <image name="googlePlusIconImage" width="337" height="140"/>
         <image name="greenDotIcon" width="25" height="25"/>
         <image name="hamburgerMenuButtonIcon" width="22" height="22"/>
+        <image name="lolyhubColorBar" width="310" height="5"/>
         <image name="lolyhubLogo" width="318" height="136"/>
         <image name="productListFilterIcon" width="55" height="74"/>
         <image name="productListTableIcon" width="74" height="65"/>
