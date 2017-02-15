@@ -920,21 +920,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-ZX-RGi">
-                                <rect key="frame" x="0.0" y="122" width="375" height="295"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="310"/>
                                 <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-eI-k2Q">
-                                        <rect key="frame" x="0.0" y="258" width="375" height="37"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="37" id="2XU-D5-gbP"/>
-                                        </constraints>
-                                        <color key="pageIndicatorTintColor" red="0.66268575191497803" green="0.66278314590454102" blue="0.66266441345214844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="pageControlValueChanged:" destination="jLD-U4-bJa" eventType="valueChanged" id="YPU-lR-uQy"/>
-                                        </connections>
-                                    </pageControl>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7R8-js-PP5" customClass="iCarousel">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="15" width="375" height="250"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="VlW-CV-z6x"/>
@@ -944,15 +933,26 @@
                                             <outlet property="delegate" destination="jLD-U4-bJa" id="sLE-BI-DQz"/>
                                         </connections>
                                     </view>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-eI-k2Q">
+                                        <rect key="frame" x="0.0" y="273" width="375" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="2XU-D5-gbP"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" red="0.66268575191497803" green="0.66278314590454102" blue="0.66266441345214844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="pageControlValueChanged:" destination="jLD-U4-bJa" eventType="valueChanged" id="YPU-lR-uQy"/>
+                                        </connections>
+                                    </pageControl>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="7R8-js-PP5" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="top" id="2OY-wB-pLd"/>
+                                    <constraint firstItem="7R8-js-PP5" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="top" constant="15" id="2OY-wB-pLd"/>
                                     <constraint firstItem="7R8-js-PP5" firstAttribute="leading" secondItem="6Lh-ZX-RGi" secondAttribute="leading" id="2qE-bT-8EU"/>
                                     <constraint firstAttribute="trailing" secondItem="7R8-js-PP5" secondAttribute="trailing" id="FaZ-1w-Hey"/>
                                     <constraint firstAttribute="trailing" secondItem="tHV-eI-k2Q" secondAttribute="trailing" id="UPc-1i-jMT"/>
                                     <constraint firstItem="tHV-eI-k2Q" firstAttribute="leading" secondItem="6Lh-ZX-RGi" secondAttribute="leading" id="VcV-2m-IKb"/>
                                     <constraint firstItem="tHV-eI-k2Q" firstAttribute="top" secondItem="7R8-js-PP5" secondAttribute="bottom" constant="8" id="b4Q-vE-IRR"/>
-                                    <constraint firstAttribute="height" constant="295" id="nN4-vp-0h8"/>
+                                    <constraint firstAttribute="height" constant="310" id="nN4-vp-0h8"/>
                                     <constraint firstAttribute="bottom" secondItem="tHV-eI-k2Q" secondAttribute="bottom" id="zne-u0-dlw"/>
                                 </constraints>
                             </view>
@@ -964,7 +964,7 @@
                             <constraint firstAttribute="trailing" secondItem="jQs-Jy-qjn" secondAttribute="trailing" id="aWH-9o-Qvw"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="top" secondItem="jU2-ga-3mY" secondAttribute="bottom" id="dLf-4I-NNl"/>
                             <constraint firstItem="6Lh-ZX-RGi" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="8" id="l6W-Kv-42K"/>
-                            <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="bottom" constant="201" id="oxF-dT-kYc"/>
+                            <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="bottom" constant="186" id="oxF-dT-kYc"/>
                             <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="504" id="v6A-Ju-mck"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leading" id="xDY-F4-MdL"/>
                         </constraints>

@@ -55,6 +55,10 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
         return value
     }
     
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        pageControl.currentPage = carousel.currentItemIndex
+    }
+    
     
     @IBAction func pageControlValueChanged(_ sender: UIPageControl) {
         carouselView.scrollToItem(at: sender.currentPage, animated: true)
