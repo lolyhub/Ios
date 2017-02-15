@@ -18,7 +18,7 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pageControl.numberOfPages = 5
+        pageControl.numberOfPages = 4
         pageControl.currentPage = 0
         carouselView.type = .linear
         
@@ -27,7 +27,7 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
     }
 
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 5
+        return 4
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {

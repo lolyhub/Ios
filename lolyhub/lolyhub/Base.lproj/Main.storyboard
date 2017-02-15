@@ -168,7 +168,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget your password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-rJ-Rfw">
-                                <rect key="frame" x="8" y="255" width="153" height="21"/>
+                                <rect key="frame" x="8" y="255" width="155" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="v9U-rH-Siy"/>
                                 </constraints>
@@ -177,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fks-pw-Uwd">
-                                <rect key="frame" x="180" y="250" width="76" height="33"/>
+                                <rect key="frame" x="182" y="250" width="74" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DmR-3W-tdv"/>
                                 </constraints>
@@ -374,7 +374,7 @@
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCZ-Vy-jDc">
-                                                <rect key="frame" x="180" y="687" width="30" height="25"/>
+                                                <rect key="frame" x="180" y="687" width="30" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="RYE-0U-Ren"/>
                                                 </constraints>
@@ -415,16 +415,16 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe for Lolyhub newsletter " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-aa-ySU">
-                                                <rect key="frame" x="15" y="557" width="250" height="40"/>
+                                                <rect key="frame" x="15" y="557" width="241" height="40"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.35401895639999997" green="0.3543119133" blue="0.35406431560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-QY-z9r">
-                                                <rect key="frame" x="273" y="562" width="51" height="31"/>
+                                                <rect key="frame" x="264" y="562" width="51" height="31"/>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-pa-aex">
-                                                <rect key="frame" x="15" y="737" width="110" height="46"/>
+                                                <rect key="frame" x="15" y="733" width="110" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="82Q-Xi-NKi"/>
                                                     <constraint firstAttribute="height" constant="46" id="8uv-a7-QGZ"/>
@@ -432,11 +432,11 @@
                                                 <state key="normal" backgroundImage="facebookIconImage"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-3P-qb5">
-                                                <rect key="frame" x="249" y="737" width="110" height="46"/>
+                                                <rect key="frame" x="249" y="733" width="110" height="46"/>
                                                 <state key="normal" backgroundImage="twitterIconImage"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOl-B4-riG">
-                                                <rect key="frame" x="132" y="737" width="109" height="46"/>
+                                                <rect key="frame" x="132" y="733" width="109" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="109" id="mGl-kA-uzJ"/>
                                                 </constraints>
@@ -883,19 +883,19 @@
                                         <state key="normal" image="cartNotSelected"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="CART" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO2-tz-wbB">
-                                        <rect key="frame" x="56" y="10" width="39" height="30"/>
+                                        <rect key="frame" x="56" y="10" width="42" height="30"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WISHLIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1l-2G-bMP">
-                                        <rect key="frame" x="296" y="10" width="71" height="30"/>
+                                        <rect key="frame" x="293" y="10" width="74" height="30"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iy-uP-JPA">
-                                        <rect key="frame" x="248" y="5" width="40" height="40"/>
+                                        <rect key="frame" x="245" y="5" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="QhI-Hz-r55"/>
                                         </constraints>
@@ -933,7 +933,7 @@
                                             <outlet property="delegate" destination="jLD-U4-bJa" id="sLE-BI-DQz"/>
                                         </connections>
                                     </view>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-eI-k2Q">
+                                    <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-eI-k2Q">
                                         <rect key="frame" x="0.0" y="273" width="375" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="2XU-D5-gbP"/>
@@ -986,14 +986,56 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Redeem for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjn-3U-krU">
+                                        <rect key="frame" x="8" y="50" width="100" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="EGx-h7-mvX"/>
+                                            <constraint firstAttribute="width" constant="100" id="SWq-fj-OPk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Earning:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt4-nn-5Vs">
+                                        <rect key="frame" x="8" y="83" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2833 +LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9b-X0-go7">
+                                        <rect key="frame" x="121" y="83" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                        <color key="textColor" red="0.97553032640000004" green="0.67832010980000002" blue="0.11599240449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2833 LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAP-53-ts9">
+                                        <rect key="frame" x="121" y="50" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                        <color key="textColor" red="0.52939248090000002" green="0.76452809570000002" blue="0.2498683333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="h2d-11-4fK" firstAttribute="top" secondItem="cU6-dz-9vo" secondAttribute="top" id="1ng-Ng-iWX"/>
+                                    <constraint firstItem="BAP-53-ts9" firstAttribute="leading" secondItem="S9b-X0-go7" secondAttribute="leading" id="AJ9-QA-rzw"/>
+                                    <constraint firstItem="Bt4-nn-5Vs" firstAttribute="top" secondItem="S9b-X0-go7" secondAttribute="top" id="ALq-sQ-5Lp"/>
+                                    <constraint firstItem="BAP-53-ts9" firstAttribute="trailing" secondItem="S9b-X0-go7" secondAttribute="trailing" id="Gib-ST-xF2"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="leading" secondItem="cU6-dz-9vo" secondAttribute="leadingMargin" id="Gii-Bw-FBi"/>
+                                    <constraint firstItem="Bt4-nn-5Vs" firstAttribute="top" secondItem="Yjn-3U-krU" secondAttribute="bottom" constant="12" id="IvN-up-iTD"/>
                                     <constraint firstAttribute="bottom" secondItem="BCQ-nI-xkr" secondAttribute="bottom" id="Phy-tD-rKl"/>
                                     <constraint firstAttribute="trailing" secondItem="h2d-11-4fK" secondAttribute="trailing" id="Rq9-iz-6rP"/>
+                                    <constraint firstItem="Bt4-nn-5Vs" firstAttribute="baseline" secondItem="S9b-X0-go7" secondAttribute="baseline" id="T2K-xY-YaR"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="baseline" secondItem="BAP-53-ts9" secondAttribute="baseline" id="Uxm-Ia-IEB"/>
+                                    <constraint firstItem="BAP-53-ts9" firstAttribute="leading" secondItem="Yjn-3U-krU" secondAttribute="trailing" constant="13" id="XRU-Lu-jUQ"/>
                                     <constraint firstAttribute="trailing" secondItem="BCQ-nI-xkr" secondAttribute="trailing" id="XfO-tO-M4e"/>
                                     <constraint firstAttribute="height" constant="158" id="bYH-hD-hTU"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="top" secondItem="BAP-53-ts9" secondAttribute="top" id="gpr-G1-tia"/>
                                     <constraint firstItem="h2d-11-4fK" firstAttribute="leading" secondItem="cU6-dz-9vo" secondAttribute="leading" id="hA2-kO-cGt"/>
+                                    <constraint firstItem="BCQ-nI-xkr" firstAttribute="top" secondItem="Bt4-nn-5Vs" secondAttribute="bottom" constant="19" id="nG2-du-2iB"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="leading" secondItem="Bt4-nn-5Vs" secondAttribute="leading" id="q9o-qi-p8f"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="top" secondItem="h2d-11-4fK" secondAttribute="bottom" constant="15" id="qAC-DR-aPG"/>
+                                    <constraint firstItem="BAP-53-ts9" firstAttribute="centerX" secondItem="h2d-11-4fK" secondAttribute="centerX" id="quO-7p-qNE"/>
+                                    <constraint firstItem="Yjn-3U-krU" firstAttribute="trailing" secondItem="Bt4-nn-5Vs" secondAttribute="trailing" id="s60-l3-Evk"/>
                                     <constraint firstItem="BCQ-nI-xkr" firstAttribute="leading" secondItem="cU6-dz-9vo" secondAttribute="leading" id="t3y-LR-y15"/>
                                 </constraints>
                             </view>
@@ -1083,7 +1125,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="hamburgerMenuButtonIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1102,7 +1144,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="searchTabBarICon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1121,7 +1163,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="yellowDotIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1140,7 +1182,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="greenDotIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1159,7 +1201,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Cart" image="redDotIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1177,7 +1219,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
