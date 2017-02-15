@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18217F5E1E5437BF00E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
+		18217F5F1E5437C600E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
+		18217F601E5437C600E9D38D /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18217F651E54396800E9D38D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217F641E54396800E9D38D /* iCarousel.m */; };
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
 		E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */; };
@@ -67,8 +71,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18217F611E5437C600E9D38D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18217F601E5437C600E9D38D /* QuartzCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		16D1E0670C95468046BF128A /* Pods_lolyhub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lolyhub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18217F5D1E5437BF00E9D38D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18217F631E54396800E9D38D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		18217F641E54396800E9D38D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
@@ -126,7 +147,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18217F5E1E5437BF00E9D38D /* QuartzCore.framework in Frameworks */,
 				A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */,
+				18217F5F1E5437C600E9D38D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +173,19 @@
 		0CA4968D23E961871D1A48D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18217F5D1E5437BF00E9D38D /* QuartzCore.framework */,
 				16D1E0670C95468046BF128A /* Pods_lolyhub.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18217F621E54393F00E9D38D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				18217F631E54396800E9D38D /* iCarousel.h */,
+				18217F641E54396800E9D38D /* iCarousel.m */,
+			);
+			name = iCarousel;
 			sourceTree = "<group>";
 		};
 		E9367F951E2781DB00199726 /* TabBarController */ = {
@@ -249,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A92BBF1E2B57E500A0DBFF /* lolyhub-Bridging-Header.h */,
+				18217F621E54393F00E9D38D /* iCarousel */,
 				E9367F931E27807D00199726 /* SSASideMenu.swift */,
 				E9EE04131E360EB5006C85FD /* Fonts */,
 				E9A92BBE1E2B57D000A0DBFF /* SWRevealViewController */,
@@ -329,6 +363,7 @@
 				E978C3A41E236B3F00B73BF6 /* Resources */,
 				85E6B5CB047113EDF0F36428 /* [CP] Embed Pods Frameworks */,
 				6BD6E1972CAF3DF8CB73036C /* [CP] Copy Pods Resources */,
+				18217F611E5437C600E9D38D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -519,6 +554,7 @@
 				E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */,
 				E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */,
 				E9B50C221E4C86AD0054A02D /* ProductTableViewCell.swift in Sources */,
+				18217F651E54396800E9D38D /* iCarousel.m in Sources */,
 				E9367FA21E27833A00199726 /* CartViewController.swift in Sources */,
 				E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */,
 				E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */,

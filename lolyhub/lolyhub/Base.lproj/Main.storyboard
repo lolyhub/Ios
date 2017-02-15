@@ -168,7 +168,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget your password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-rJ-Rfw">
-                                <rect key="frame" x="8" y="255" width="155" height="21"/>
+                                <rect key="frame" x="8" y="255" width="153" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="v9U-rH-Siy"/>
                                 </constraints>
@@ -177,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fks-pw-Uwd">
-                                <rect key="frame" x="182" y="250" width="74" height="33"/>
+                                <rect key="frame" x="180" y="250" width="76" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DmR-3W-tdv"/>
                                 </constraints>
@@ -374,7 +374,7 @@
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCZ-Vy-jDc">
-                                                <rect key="frame" x="180" y="687" width="30" height="21"/>
+                                                <rect key="frame" x="180" y="687" width="30" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="RYE-0U-Ren"/>
                                                 </constraints>
@@ -415,16 +415,16 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe for Lolyhub newsletter " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-aa-ySU">
-                                                <rect key="frame" x="15" y="557" width="241" height="40"/>
+                                                <rect key="frame" x="15" y="557" width="250" height="40"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.35401895639999997" green="0.3543119133" blue="0.35406431560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-QY-z9r">
-                                                <rect key="frame" x="264" y="562" width="51" height="31"/>
+                                                <rect key="frame" x="273" y="562" width="51" height="31"/>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-pa-aex">
-                                                <rect key="frame" x="15" y="733" width="110" height="46"/>
+                                                <rect key="frame" x="15" y="737" width="110" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="82Q-Xi-NKi"/>
                                                     <constraint firstAttribute="height" constant="46" id="8uv-a7-QGZ"/>
@@ -432,11 +432,11 @@
                                                 <state key="normal" backgroundImage="facebookIconImage"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-3P-qb5">
-                                                <rect key="frame" x="249" y="733" width="110" height="46"/>
+                                                <rect key="frame" x="249" y="737" width="110" height="46"/>
                                                 <state key="normal" backgroundImage="twitterIconImage"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOl-B4-riG">
-                                                <rect key="frame" x="132" y="733" width="109" height="46"/>
+                                                <rect key="frame" x="132" y="737" width="109" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="109" id="mGl-kA-uzJ"/>
                                                 </constraints>
@@ -754,7 +754,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw7-Oc-liF">
-                                <rect key="frame" x="137" y="318" width="100" height="30"/>
+                                <rect key="frame" x="138" y="318" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="g7S-El-qIn"/>
                                     <constraint firstAttribute="height" constant="30" id="o74-6G-DOh"/>
@@ -860,7 +860,7 @@
             </objects>
             <point key="canvasLocation" x="1261.5999999999999" y="-1081.7091454272863"/>
         </scene>
-        <!--detailView-->
+        <!--Data Source-->
         <scene sceneID="ugQ-my-tlO">
             <objects>
                 <viewController storyboardIdentifier="ProductDetailViewController" title="detailView" id="jLD-U4-bJa" customClass="ProductDetailViewController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
@@ -883,19 +883,19 @@
                                         <state key="normal" image="cartNotSelected"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="CART" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO2-tz-wbB">
-                                        <rect key="frame" x="56" y="10" width="42" height="30"/>
+                                        <rect key="frame" x="56" y="10" width="39" height="30"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WISHLIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1l-2G-bMP">
-                                        <rect key="frame" x="293" y="10" width="74" height="30"/>
+                                        <rect key="frame" x="296" y="10" width="71" height="30"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iy-uP-JPA">
-                                        <rect key="frame" x="245" y="5" width="40" height="40"/>
+                                        <rect key="frame" x="248" y="5" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="QhI-Hz-r55"/>
                                         </constraints>
@@ -919,17 +919,62 @@
                                     <constraint firstItem="IO2-tz-wbB" firstAttribute="leading" secondItem="e9r-zj-tsh" secondAttribute="trailing" constant="8" symbolic="YES" id="ut5-Gy-Igi"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-ZX-RGi">
+                                <rect key="frame" x="0.0" y="122" width="375" height="295"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-eI-k2Q">
+                                        <rect key="frame" x="0.0" y="258" width="375" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="2XU-D5-gbP"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" red="0.66268575191497803" green="0.66278314590454102" blue="0.66266441345214844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="pageControlValueChanged:" destination="jLD-U4-bJa" eventType="valueChanged" id="YPU-lR-uQy"/>
+                                        </connections>
+                                    </pageControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7R8-js-PP5" customClass="iCarousel">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="VlW-CV-z6x"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="jLD-U4-bJa" id="M4H-or-0PM"/>
+                                            <outlet property="delegate" destination="jLD-U4-bJa" id="sLE-BI-DQz"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7R8-js-PP5" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="top" id="2OY-wB-pLd"/>
+                                    <constraint firstItem="7R8-js-PP5" firstAttribute="leading" secondItem="6Lh-ZX-RGi" secondAttribute="leading" id="2qE-bT-8EU"/>
+                                    <constraint firstAttribute="trailing" secondItem="7R8-js-PP5" secondAttribute="trailing" id="FaZ-1w-Hey"/>
+                                    <constraint firstAttribute="trailing" secondItem="tHV-eI-k2Q" secondAttribute="trailing" id="UPc-1i-jMT"/>
+                                    <constraint firstItem="tHV-eI-k2Q" firstAttribute="leading" secondItem="6Lh-ZX-RGi" secondAttribute="leading" id="VcV-2m-IKb"/>
+                                    <constraint firstItem="tHV-eI-k2Q" firstAttribute="top" secondItem="7R8-js-PP5" secondAttribute="bottom" constant="8" id="b4Q-vE-IRR"/>
+                                    <constraint firstAttribute="height" constant="295" id="nN4-vp-0h8"/>
+                                    <constraint firstAttribute="bottom" secondItem="tHV-eI-k2Q" secondAttribute="bottom" id="zne-u0-dlw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6Lh-ZX-RGi" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leading" id="OJo-X4-yeq"/>
+                            <constraint firstAttribute="trailing" secondItem="6Lh-ZX-RGi" secondAttribute="trailing" id="OOr-iF-Q8P"/>
                             <constraint firstAttribute="trailing" secondItem="jQs-Jy-qjn" secondAttribute="trailing" id="aWH-9o-Qvw"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="top" secondItem="jU2-ga-3mY" secondAttribute="bottom" id="dLf-4I-NNl"/>
+                            <constraint firstItem="6Lh-ZX-RGi" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="8" id="l6W-Kv-42K"/>
+                            <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="6Lh-ZX-RGi" secondAttribute="bottom" constant="201" id="oxF-dT-kYc"/>
                             <constraint firstItem="NkA-Pb-dKx" firstAttribute="top" secondItem="jQs-Jy-qjn" secondAttribute="bottom" constant="504" id="v6A-Ju-mck"/>
                             <constraint firstItem="jQs-Jy-qjn" firstAttribute="leading" secondItem="m5U-tZ-IL4" secondAttribute="leading" id="xDY-F4-MdL"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="carouselView" destination="7R8-js-PP5" id="23D-PQ-eQt"/>
+                        <outlet property="pageControl" destination="tHV-eI-k2Q" id="444-N0-KHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcB-zB-gBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -989,7 +1034,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="hamburgerMenuButtonIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1008,7 +1053,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="searchTabBarICon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1027,7 +1072,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="yellowDotIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1046,7 +1091,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="greenDotIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1065,7 +1110,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Cart" image="redDotIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1083,7 +1128,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
