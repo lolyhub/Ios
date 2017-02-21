@@ -43,6 +43,7 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
             itemView = UIImageView(frame: carouselView.bounds)
             itemView.contentMode = UIViewContentMode.scaleAspectFit
             itemView.image = UIImage(named: "detailWatchSample")
+            
         }
         
         return itemView

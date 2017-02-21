@@ -1,12 +1,15 @@
 PODS:
   - IQKeyboardManagerSwift (4.0.8)
+  - LUExpandableTableView (1.0.2)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - LUExpandableTableView
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  LUExpandableTableView: 693a076fe6a5e0fae88f5a12c5f60d34e9910faf
 
-PODFILE CHECKSUM: 8b864f5479c6e232407c4361cc3cc4dd0db1ccd7
+PODFILE CHECKSUM: 05ccb63e63776029c406fca23e8fe99009cf6ab9
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

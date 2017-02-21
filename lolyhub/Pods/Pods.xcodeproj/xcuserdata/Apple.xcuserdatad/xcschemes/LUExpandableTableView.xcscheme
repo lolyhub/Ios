@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '27118929D990F2CAC4D596243B42FF29'
-               BlueprintName = 'Pods-lolyhub'
+               BlueprintIdentifier = 'B0DB0AE168860164ECC4CC126646FC92'
+               BlueprintName = 'LUExpandableTableView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-lolyhub.framework'>
+               BuildableName = 'LUExpandableTableView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

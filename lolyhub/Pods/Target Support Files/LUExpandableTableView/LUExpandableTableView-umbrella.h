@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_lolyhubVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_lolyhubVersionString[];
+FOUNDATION_EXPORT double LUExpandableTableViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char LUExpandableTableViewVersionString[];
 
