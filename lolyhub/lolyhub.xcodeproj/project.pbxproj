@@ -11,6 +11,7 @@
 		18217F5F1E5437C600E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
 		18217F601E5437C600E9D38D /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18217F651E54396800E9D38D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217F641E54396800E9D38D /* iCarousel.m */; };
+		189BD1E11E5DB9B8009499F9 /* homeBannerSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BD1E01E5DB9B8009499F9 /* homeBannerSliderCell.swift */; };
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
 		E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */; };
@@ -90,6 +91,7 @@
 		18217F5D1E5437BF00E9D38D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18217F631E54396800E9D38D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		18217F641E54396800E9D38D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		189BD1E01E5DB9B8009499F9 /* homeBannerSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeBannerSliderCell.swift; sourceTree = "<group>"; };
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 			name = iCarousel;
 			sourceTree = "<group>";
 		};
+		189BD1DF1E5DB91A009499F9 /* HomeScreenCells */ = {
+			isa = PBXGroup;
+			children = (
+				189BD1E01E5DB9B8009499F9 /* homeBannerSliderCell.swift */,
+			);
+			name = HomeScreenCells;
+			sourceTree = "<group>";
+		};
 		E9367F951E2781DB00199726 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +215,7 @@
 				E9367F9D1E27831F00199726 /* WalletViewController.swift */,
 				E9367F9F1E27832F00199726 /* WishListViewController.swift */,
 				E9367FA11E27833A00199726 /* CartViewController.swift */,
+				189BD1DF1E5DB91A009499F9 /* HomeScreenCells */,
 			);
 			name = TabBarViewControllers;
 			sourceTree = "<group>";
@@ -557,6 +568,7 @@
 				18217F651E54396800E9D38D /* iCarousel.m in Sources */,
 				E9367FA21E27833A00199726 /* CartViewController.swift in Sources */,
 				E978C3AC1E236B3F00B73BF6 /* ViewController.swift in Sources */,
+				189BD1E11E5DB9B8009499F9 /* homeBannerSliderCell.swift in Sources */,
 				E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */,
 				E9367FA41E27834400199726 /* HomeViewController.swift in Sources */,
 				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,

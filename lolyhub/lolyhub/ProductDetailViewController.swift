@@ -31,6 +31,7 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        
         var itemView: UIImageView
         if let view = view as? UIImageView {
             itemView = view
@@ -50,6 +51,7 @@ class ProductDetailViewController: UIViewController, iCarouselDelegate, iCarouse
     }
     
     func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        
         if (option == .spacing) {
             return value * 1.1
         }
