@@ -66,7 +66,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         else if(indexPath.row == 1) {
-            let cell2 = homeTableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
+            let cell2 = homeTableView.dequeueReusableCell(withIdentifier: "HomeCategoryTableViewCell", for: indexPath)
             return cell2
         }
         else {
@@ -76,6 +76,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if(indexPath.row == 1) {
+            guard let HomeCategoryTableViewCell = cell as? HomeCategoryTableViewCell else { return }
+            
+            HomeCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
+        }
+    }
     
     
     
@@ -120,7 +128,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return 310
         }
         else if(indexPath.row == 1) {
-            return 132
+            return 160
         }
         else {
             return 153
@@ -159,3 +167,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     */
 
 }
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath)
+        
+       // cell.backgroundColor = UIColor.green
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+    }
+}
+
+
+
+
