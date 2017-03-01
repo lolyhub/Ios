@@ -26,6 +26,10 @@ class LolyHubStyler{
     static let wishNotSelectedIconImageName = "wishNotSelected"
     static let wishSelectedIconImageName = "wishSelected"
     
+    static let categoryBooksSampleImageName = "categoryBooksSample"
+    static let categoryElectronicsSampleImageName = "categoryElectronicsSample"
+    static let categoryFoodSampleImageName = "categoryFoodSample"
+    static let categoryWatchSampleImageName = "categoryWatchSample"
 
 }
 
