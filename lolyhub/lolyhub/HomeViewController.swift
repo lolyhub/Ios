@@ -16,6 +16,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var bannerCell: homeBannerSliderCell!
     
+    
+    
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
 
@@ -39,6 +41,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        homeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell2")
 //        homeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell3")
 //        
+        homeTableView.register(UINib.init(nibName: "HomeSingleCategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryTableViewCell")
+        
+//        homeTableView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
+        
+//        homeTableView.register(UITableViewCell.self
+//            , forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
+//        
+        
         
     }
     
@@ -69,8 +79,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell2 = homeTableView.dequeueReusableCell(withIdentifier: "HomeCategoryTableViewCell", for: indexPath)
             return cell2
         }
+        
         else {
-            let cell3 = homeTableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath)
+            let cell3 = homeTableView.dequeueReusableCell(withIdentifier: "HomeSingleCategoryTableViewCell", for: indexPath) as! HomeSingleCategoryTableViewCell
+            
+            
+            let oneView = cell3.viewWithTag(100) as! UICollectionView
+           // cell3.viewWithTag(1)
+            oneView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
+            
             return cell3
         }
         
@@ -83,6 +100,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             HomeCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
         }
+        
+        if(indexPath.row == 2) {
+         
+            
+//            tableView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
+            
+            
+            
+            
+            
+            guard let HomeSingleCategoryTableViewCell = cell as? HomeSingleCategoryTableViewCell else { return }
+            
+            HomeSingleCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
+        }
+        
     }
     
     
@@ -130,6 +162,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else if(indexPath.row == 1) {
             return 160
         }
+        else if(indexPath.row == 2) {
+            return 320
+        }
         else {
             return 153
         }
@@ -170,17 +205,37 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        
+        if(collectionView.tag == 1) {
+            return 6
+        }
+        else {
+            return 3
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath) as! HomeCategoryCollectionViewCell
         
-        cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryElectronicsSampleImageName)
+        print("theTag :\(collectionView.tag)")
         
-       // cell.backgroundColor = UIColor.green
+        if(collectionView.tag == 1) {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath) as! HomeCategoryCollectionViewCell
+            
+            cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryElectronicsSampleImageName)
+            
+            return cell
+
+        }
+        else {
+            
+            let firstHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeSingleCategoryCollectionViewCell", for: indexPath) as! HomeSingleCategoryCollectionViewCell
+            
+            return firstHomeSingleCategoryCollectionViewCell
+            
+        }
         
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
