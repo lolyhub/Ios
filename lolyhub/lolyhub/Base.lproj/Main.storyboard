@@ -418,13 +418,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe for Lolyhub newsletter " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-aa-ySU">
-                                                <rect key="frame" x="15" y="557" width="249.5" height="40"/>
+                                                <rect key="frame" x="15" y="557" width="250" height="40"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.35401895639999997" green="0.3543119133" blue="0.35406431560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-QY-z9r">
-                                                <rect key="frame" x="272.5" y="562" width="51" height="31"/>
+                                                <rect key="frame" x="273" y="562" width="51" height="31"/>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4u-pa-aex">
                                                 <rect key="frame" x="15" y="737" width="110" height="46"/>
@@ -870,23 +870,26 @@
                                             <outlet property="HomeCategoryCollectionView" destination="Njz-jo-P0H" id="iby-3a-BrK"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="single1" rowHeight="50" id="tsx-bo-9Pu">
-                                        <rect key="frame" x="0.0" y="498" width="375" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bottomImageCell" rowHeight="190" id="Zlu-vW-apb">
+                                        <rect key="frame" x="0.0" y="498" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tsx-bo-9Pu" id="CeI-Gl-We7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zlu-vW-apb" id="cKz-rz-tYd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSliderSample" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-3n-RIN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="189" id="EQJ-GR-ik7"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Y3K-3n-RIN" firstAttribute="leading" secondItem="cKz-rz-tYd" secondAttribute="leading" id="0uI-Aa-eWS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y3K-3n-RIN" secondAttribute="bottom" id="r3e-eL-tXO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y3K-3n-RIN" secondAttribute="trailing" id="vjE-JL-5yG"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="single2" rowHeight="50" id="Ypv-1e-D5z">
-                                        <rect key="frame" x="0.0" y="548" width="375" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ypv-1e-D5z" id="HHy-SZ-f3x">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1372,11 +1375,12 @@
     </scenes>
     <resources>
         <image name="cartNotSelected" width="15" height="15"/>
-        <image name="categoryFoodSample" width="79" height="92"/>
+        <image name="categoryFoodSample" width="75" height="86"/>
         <image name="facebookIconImage" width="337" height="140"/>
         <image name="googlePlusIconImage" width="337" height="140"/>
         <image name="greenDotIcon" width="25" height="25"/>
         <image name="hamburgerMenuButtonIcon" width="22" height="22"/>
+        <image name="homeSliderSample" width="319" height="194"/>
         <image name="lolyhubColorBar" width="310" height="5"/>
         <image name="lolyhubLogo" width="318" height="136"/>
         <image name="productListFilterIcon" width="55" height="74"/>

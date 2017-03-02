@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
    
@@ -98,6 +98,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell6
 
         }
+            
+        else if(indexPath.row == 6) {
+            let cell7 = homeTableView.dequeueReusableCell(withIdentifier: "bottomImageCell", for: indexPath)
+            
+            return cell7
+            
+        }
         else {
            let cell5 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, for: indexPath) as! HomeLolyhubOfferCategoryTableViewCell
 
@@ -142,6 +149,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else if(indexPath.row == 4) {
             return 480
+        }
+        else if(indexPath.row == 6) {
+            return 190
         }
         else {
             return 153
@@ -190,8 +200,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     @IBAction func sideMenuButtonClicked(_ sender: Any) {
-        
-        print("hello")
         
         if self.revealViewController() != nil {
         }
@@ -252,6 +260,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             else if(collectionView.tag == 2){
                 
                 let firstHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                firstHomeSingleCategoryCollectionViewCell.styleHomeScreenViewWithBorder()
                 
                 return firstHomeSingleCategoryCollectionViewCell
                 
@@ -259,11 +268,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             else if(collectionView.tag == 3){
                 let secondHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                secondHomeSingleCategoryCollectionViewCell.styleHomeScreenViewWithBorder()
                 
                 return secondHomeSingleCategoryCollectionViewCell
             }
             else {
                 let thirdHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                thirdHomeSingleCategoryCollectionViewCell.styleHomeScreenViewWithBorder()
                 
                 return thirdHomeSingleCategoryCollectionViewCell
             }
