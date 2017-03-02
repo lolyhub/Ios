@@ -69,7 +69,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         else if(indexPath.row == 2){
             let cell3 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
-            
+            cell3.viewMoreButton.styleViewMoreButton()
             
             let firstSingleCategoryView = cell3.viewWithTag(100) as? UICollectionView
             firstSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
@@ -79,7 +79,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else if(indexPath.row == 3){
             
             let cell4 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
-            
+            cell4.viewMoreButton.styleViewMoreButton()
             
             let secondSingleCategoryView = cell4.viewWithTag(100) as? UICollectionView
             secondSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
@@ -90,7 +90,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else if(indexPath.row == 5) {
             
             let cell6 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
-            
+            cell6.viewMoreButton.styleViewMoreButton()
             
             let thirdSingleCategoryView = cell6.viewWithTag(100) as? UICollectionView
             thirdSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
@@ -101,6 +101,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else {
            let cell5 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, for: indexPath) as! HomeLolyhubOfferCategoryTableViewCell
 
+            cell5.viewMoreButton.styleViewMoreButton()
+            cell5.lolySpecialView1.styleHomeScreenViewWithBorder()
+            cell5.lolySpecialView2.styleHomeScreenViewWithBorder()
+            cell5.lolySpecialView3.styleHomeScreenViewWithBorder()
+            cell5.lolySpecialView4.styleHomeScreenViewWithBorder()
             return cell5
             
         }
@@ -238,7 +243,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.HomeCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeCategoryCollectionViewCell
                 
-                cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryElectronicsSampleImageName)
+                cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryFoodSampleImageName)
+                cell.styleHomeScreenViewWithBorder()
                 
                 return cell
 

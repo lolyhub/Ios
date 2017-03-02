@@ -44,9 +44,9 @@
                         <rect key="frame" x="8" y="8" width="359" height="51"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOODS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01g-HL-SNe">
-                                <rect key="frame" x="27" y="12" width="130" height="28"/>
+                                <rect key="frame" x="27" y="12" width="200" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="BRY-y2-hOh"/>
+                                    <constraint firstAttribute="width" constant="200" id="BRY-y2-hOh"/>
                                     <constraint firstAttribute="height" constant="27.5" id="y0h-Hh-SRT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
@@ -54,10 +54,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZi-MQ-R0x">
-                                <rect key="frame" x="251" y="11" width="100" height="34"/>
+                                <rect key="frame" x="251" y="8" width="100" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9bn-Ue-6N2"/>
-                                    <constraint firstAttribute="height" constant="34" id="TEF-hQ-dCz"/>
+                                    <constraint firstAttribute="height" constant="34" id="zxG-YV-kEp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                 <state key="normal" title="View More">
@@ -68,12 +67,12 @@
                         <color key="backgroundColor" red="0.97638529539108276" green="0.97652524709701538" blue="0.97635477781295776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="01g-HL-SNe" secondAttribute="bottom" constant="11" id="3pn-6f-C8o"/>
-                            <constraint firstAttribute="trailing" secondItem="fZi-MQ-R0x" secondAttribute="trailing" constant="8" id="Geu-lg-DEA"/>
+                            <constraint firstItem="fZi-MQ-R0x" firstAttribute="top" secondItem="gzK-35-ovZ" secondAttribute="top" constant="8" id="UWZ-Z4-xap"/>
+                            <constraint firstAttribute="trailing" secondItem="fZi-MQ-R0x" secondAttribute="trailing" constant="8" id="aXn-th-bG5"/>
                             <constraint firstItem="01g-HL-SNe" firstAttribute="leading" secondItem="gzK-35-ovZ" secondAttribute="leading" constant="27" id="bBv-ZE-afp"/>
                             <constraint firstItem="01g-HL-SNe" firstAttribute="top" secondItem="gzK-35-ovZ" secondAttribute="top" constant="12" id="lyy-NR-XfN"/>
                             <constraint firstAttribute="height" constant="50.5" id="rIy-cY-OIm"/>
-                            <constraint firstItem="fZi-MQ-R0x" firstAttribute="top" secondItem="gzK-35-ovZ" secondAttribute="top" constant="11" id="rJU-Qu-qO0"/>
-                            <constraint firstAttribute="bottom" secondItem="fZi-MQ-R0x" secondAttribute="bottom" constant="5.5" id="wBs-AR-0MX"/>
+                            <constraint firstItem="fZi-MQ-R0x" firstAttribute="leading" secondItem="01g-HL-SNe" secondAttribute="trailing" constant="24" id="rMz-cX-K5e"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -88,6 +87,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="HomeSingleCategoryCollectionView" destination="QbB-9E-a6v" id="Ekg-d3-qdW"/>
+                <outlet property="categoryNameLabel" destination="01g-HL-SNe" id="BV1-zR-yHR"/>
+                <outlet property="viewMoreButton" destination="fZi-MQ-R0x" id="sju-4j-gqd"/>
             </connections>
             <point key="canvasLocation" x="47.5" y="-140.5"/>
         </tableViewCell>

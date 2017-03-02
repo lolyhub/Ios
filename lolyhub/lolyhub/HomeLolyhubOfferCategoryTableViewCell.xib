@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jtE-su-0sd" secondAttribute="trailing" constant="8" id="2fy-h3-Fl0"/>
                             <constraint firstItem="iT5-Af-djW" firstAttribute="leading" secondItem="Ze5-eO-rYV" secondAttribute="trailing" constant="10" id="4b8-Gw-Q0J"/>
@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Q03-Cj-9II" secondAttribute="trailing" constant="8" id="0zv-l2-1io"/>
                             <constraint firstAttribute="bottom" secondItem="nQw-5Y-zp9" secondAttribute="bottom" constant="8" id="6dp-jC-6Ru"/>
@@ -239,7 +239,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SZv-Hu-dbR" firstAttribute="top" secondItem="iAT-QU-zRB" secondAttribute="bottom" constant="6" id="69I-go-Fdz"/>
                             <constraint firstItem="SZv-Hu-dbR" firstAttribute="leading" secondItem="UyY-8d-RFw" secondAttribute="trailing" constant="18" id="69M-Ux-Nqz"/>
@@ -305,7 +305,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="199" id="0Pg-mZ-bEl"/>
                             <constraint firstItem="pcb-vF-SoG" firstAttribute="leading" secondItem="jaO-f4-scU" secondAttribute="trailing" constant="18" id="4UP-7l-Hnn"/>
@@ -349,6 +349,25 @@
                     <constraint firstItem="2hT-6H-hix" firstAttribute="leading" secondItem="n7T-LL-AkF" secondAttribute="leading" id="xT2-pK-jCe"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="lolySpecialEarningLabel1" destination="3gS-uC-3ar" id="Ueg-Bg-C6H"/>
+                <outlet property="lolySpecialEarningLabel2" destination="6CP-Ch-Rnd" id="73t-D1-W4c"/>
+                <outlet property="lolySpecialEarningLabel3" destination="SZv-Hu-dbR" id="TSx-06-SEe"/>
+                <outlet property="lolySpecialEarningLabel4" destination="pcb-vF-SoG" id="ILw-J4-6KO"/>
+                <outlet property="lolySpecialImageView1" destination="jtE-su-0sd" id="wDK-ZG-wOP"/>
+                <outlet property="lolySpecialImageView2" destination="9XK-2d-420" id="Jue-sI-Ruw"/>
+                <outlet property="lolySpecialImageView3" destination="72B-Uc-cwJ" id="0pU-Xz-wfx"/>
+                <outlet property="lolySpecialImageView4" destination="Se0-1b-eGJ" id="fpu-mK-i1M"/>
+                <outlet property="lolySpecialRedeemPointLabel1" destination="iT5-Af-djW" id="Ntl-I0-DCl"/>
+                <outlet property="lolySpecialRedeemPointLabel2" destination="Q03-Cj-9II" id="084-tC-Q3e"/>
+                <outlet property="lolySpecialRedeemPointLabel3" destination="iAT-QU-zRB" id="tbM-l7-TZw"/>
+                <outlet property="lolySpecialRedeemPointLabel4" destination="0NM-8z-nE5" id="IaU-E6-4yS"/>
+                <outlet property="lolySpecialView1" destination="1Ha-Kq-eVH" id="wrc-74-GK8"/>
+                <outlet property="lolySpecialView2" destination="n7T-LL-AkF" id="hnC-5V-one"/>
+                <outlet property="lolySpecialView3" destination="FC8-Oy-Bn0" id="Ccd-Xe-0cj"/>
+                <outlet property="lolySpecialView4" destination="2hT-6H-hix" id="ADe-b1-Xuc"/>
+                <outlet property="viewMoreButton" destination="cgg-cF-z6W" id="aMi-iK-HXQ"/>
+            </connections>
             <point key="canvasLocation" x="44.5" y="-324.5"/>
         </tableViewCell>
     </objects>

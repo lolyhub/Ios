@@ -11,6 +11,10 @@ import UIKit
 class HomeSingleCategoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var HomeSingleCategoryCollectionView: UICollectionView!
+    
+    @IBOutlet weak var viewMoreButton: UIButton!
+    
+    @IBOutlet weak var categoryNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -14,8 +14,8 @@ class LolyHubStyler{
     
     //UITextField Colors
     static let primaryTextFieldBorderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
-    
-    
+    static let viewMoreButtonGreyBorderColor = UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1.0)
+    static let homeScreenViewThinGreyBorderColor = UIColor(red: 215/255, green: 215/255, blue: 215/255, alpha: 1.0)
     
     //Images and Icons
     static let hamburgerMenuButtonIconImageName = "hamburgerMenuButtonIcon"
@@ -26,11 +26,17 @@ class LolyHubStyler{
     static let wishNotSelectedIconImageName = "wishNotSelected"
     static let wishSelectedIconImageName = "wishSelected"
     
+    
+    // MARK: - sample and demo images
+    // sample and demo images
     static let categoryBooksSampleImageName = "categoryBooksSample"
     static let categoryElectronicsSampleImageName = "categoryElectronicsSample"
     static let categoryFoodSampleImageName = "categoryFoodSample"
     static let categoryWatchSampleImageName = "categoryWatchSample"
 
+    
+    
+    
 }
 
 extension UITextField {
@@ -56,3 +62,22 @@ extension UITextField {
     }
     
 }
+
+extension UIButton {
+    
+    func styleViewMoreButton() {
+        self.layer.borderColor = LolyHubStyler.viewMoreButtonGreyBorderColor.cgColor
+        self.layer.borderWidth = 1
+    }
+    
+}
+
+extension UIView {
+    
+    func styleHomeScreenViewWithBorder() {
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = LolyHubStyler.homeScreenViewThinGreyBorderColor.cgColor
+    }
+    
+}
+
