@@ -41,10 +41,10 @@
                         <cells/>
                     </collectionView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzK-35-ovZ">
-                        <rect key="frame" x="8" y="8" width="359" height="50.5"/>
+                        <rect key="frame" x="8" y="8" width="359" height="51"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOODS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01g-HL-SNe">
-                                <rect key="frame" x="27" y="12" width="130" height="27.5"/>
+                                <rect key="frame" x="27" y="12" width="130" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="BRY-y2-hOh"/>
                                     <constraint firstAttribute="height" constant="27.5" id="y0h-Hh-SRT"/>

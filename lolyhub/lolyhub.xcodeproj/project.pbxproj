@@ -18,6 +18,8 @@
 		18A5DD111E5ED8F000A0FBC0 /* HomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5DD101E5ED8F000A0FBC0 /* HomeCategoryTableViewCell.swift */; };
 		18D631B61E66DB5C00886D13 /* HomeSingleCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D631B51E66DB5C00886D13 /* HomeSingleCategoryCollectionViewCell.swift */; };
 		18D631B81E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D631B71E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib */; };
+		18FC18171E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC18161E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift */; };
+		18FC18191E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FC18181E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib */; };
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
 		E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */; };
@@ -104,6 +106,8 @@
 		18A5DD101E5ED8F000A0FBC0 /* HomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		18D631B51E66DB5C00886D13 /* HomeSingleCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSingleCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		18D631B71E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSingleCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		18FC18161E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLolyhubOfferCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		18FC18181E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeLolyhubOfferCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 				188E88BA1E66BD4B00EC1710 /* HomeSingleCategoryTableViewCell.xib */,
 				18D631B51E66DB5C00886D13 /* HomeSingleCategoryCollectionViewCell.swift */,
 				18D631B71E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib */,
+				18FC18161E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift */,
+				18FC18181E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib */,
 			);
 			name = HomeScreenCells;
 			sourceTree = "<group>";
@@ -501,6 +507,7 @@
 				18D631B81E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib in Resources */,
 				E92ADE221E52E0860065C918 /* ProductCollectionViewCell.xib in Resources */,
 				E9EE04241E361022006C85FD /* OpenSans-LightItalic.ttf in Resources */,
+				18FC18191E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib in Resources */,
 				E9B50C231E4C86AD0054A02D /* ProductTableViewCell.xib in Resources */,
 				E9EE04251E361022006C85FD /* OpenSans-Regular.ttf in Resources */,
 				E9EE04261E361022006C85FD /* OpenSans-Semibold.ttf in Resources */,
@@ -605,6 +612,7 @@
 				E9A92BC21E2B57E600A0DBFF /* SWRevealViewController.m in Sources */,
 				E9A92BC41E2B5C2800A0DBFF /* CommonMethods.swift in Sources */,
 				E978C3E61E23B2E700B73BF6 /* Constants.swift in Sources */,
+				18FC18171E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift in Sources */,
 				E978C3E81E23B2F600B73BF6 /* LHStyler.swift in Sources */,
 				E9B50C1E1E4C71AB0054A02D /* ProductDetailViewController.swift in Sources */,
 				E9367FA01E27832F00199726 /* WishListViewController.swift in Sources */,

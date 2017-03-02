@@ -21,5 +21,12 @@ class LHCellIdefntifiers {
     //Cell identifiers
     static let productTableViewCellIdentifier = "ProductTableViewCell"
     static let productCollectionCellIdentifier = "ProductCollectionViewCell"
+    static let homeBannerSliderCellIdentifier = "homeBannerSliderCell"
+    static let homeSingleCategoryTableViewCellIdentifier = "HomeSingleCategoryTableViewCell"
+    static let homeSingleCategoryCollectionViewCellIdentifier = "HomeSingleCategoryCollectionViewCell"
+    static let homeCategoryTableViewCellIdentifier = "HomeCategoryTableViewCell"
+    static let HomeCategoryCollectionViewCellIdentifier = "HomeCategoryCollectionViewCell"
+    static let homeLolyhubOfferCategoryTableViewCellIdentifier = "HomeLolyhubOfferCategoryTableViewCell"
+
     
 }

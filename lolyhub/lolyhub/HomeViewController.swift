@@ -12,11 +12,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
     @IBOutlet weak var homeBannerSliderPageControl: UIPageControl!
-   // @IBOutlet weak var homeBannerSlider: iCarousel!
-    
+
     var bannerCell: homeBannerSliderCell!
-    
-    
     
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
@@ -32,32 +29,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - setupView
     func setupView() {
         
         homeTableView.delegate = self
         homeTableView.dataSource = self
+
+        homeTableView.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier)
         
-//        homeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "homeBannerSliderCell")
-//        homeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell2")
-//        homeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell3")
-//        
-        homeTableView.register(UINib.init(nibName: "HomeSingleCategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryTableViewCell")
-        
-//        homeTableView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
-        
-//        homeTableView.register(UITableViewCell.self
-//            , forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
-//        
-        
+        homeTableView.register(UINib.init(nibName: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier)
         
     }
     
+    // MARK: - tableView delegate and dataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
    
@@ -65,35 +55,48 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if(indexPath.row == 0) {
-            bannerCell = homeTableView.dequeueReusableCell(withIdentifier: "homeBannerSliderCell", for: indexPath) as! homeBannerSliderCell
-            
-          //  bannercell.homeBannerSlider
+            bannerCell = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeBannerSliderCellIdentifier, for: indexPath) as! homeBannerSliderCell
+
             bannerCell.homeBannerSlider.type = .linear
-            
-//            bannerCell.homeBannerSliderPageControl.addTarget(self, action: Selector(("homeSliderPagerValueChanged:")), for: .valueChanged)
             
             return bannerCell
         }
         
         else if(indexPath.row == 1) {
-            let cell2 = homeTableView.dequeueReusableCell(withIdentifier: "HomeCategoryTableViewCell", for: indexPath)
+            let cell2 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeCategoryTableViewCellIdentifier, for: indexPath)
             return cell2
         }
         
-        else {
-            let cell3 = homeTableView.dequeueReusableCell(withIdentifier: "HomeSingleCategoryTableViewCell", for: indexPath) as! HomeSingleCategoryTableViewCell
+        else if(indexPath.row == 2){
+            let cell3 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
             
             
-            let oneView = cell3.viewWithTag(100) as! UICollectionView
-           // cell3.viewWithTag(1)
-            oneView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
+            let firstSingleCategoryView = cell3.viewWithTag(100) as? UICollectionView
+            firstSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
             
             return cell3
+        }
+        else if(indexPath.row == 3){
+            
+            let cell4 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
+            
+            
+            let secondSingleCategoryView = cell4.viewWithTag(100) as? UICollectionView
+            secondSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
+            
+            return cell4
+            
+        }
+        else {
+           let cell5 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, for: indexPath) as! HomeLolyhubOfferCategoryTableViewCell
+
+            return cell5
+            
         }
         
     }
     
-    
+    // MARK: - tableView will display cell
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if(indexPath.row == 1) {
             guard let HomeCategoryTableViewCell = cell as? HomeCategoryTableViewCell else { return }
@@ -101,24 +104,37 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             HomeCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
         }
         
-        if(indexPath.row == 2) {
-         
-            
-//            tableView.register(UINib.init(nibName: "HomeSingleCategoryCollectionViewCell", bundle: nil), forCellReuseIdentifier: "HomeSingleCategoryCollectionViewCell")
-            
-            
-            
-            
+        if(indexPath.row == 2 || indexPath.row == 3) {
             
             guard let HomeSingleCategoryTableViewCell = cell as? HomeSingleCategoryTableViewCell else { return }
             
             HomeSingleCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
         }
+
         
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.row == 0) {
+            return 310
+        }
+        else if(indexPath.row == 1) {
+            return 160
+        }
+        else if(indexPath.row == 2 || indexPath.row == 3) {
+            return 385
+        }
+        else if(indexPath.row == 4) {
+            return 275
+        }
+        else {
+            return 153
+        }
+    }
+
     
     
+    // MARK: - banner carousel delegate and dataSource
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 6
     }
@@ -155,20 +171,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if(indexPath.row == 0) {
-            return 310
-        }
-        else if(indexPath.row == 1) {
-            return 160
-        }
-        else if(indexPath.row == 2) {
-            return 385
-        }
-        else {
-            return 153
-        }
-    }
     
 
     @IBAction func sideMenuButtonClicked(_ sender: Any) {
@@ -203,45 +205,53 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if(collectionView.tag == 1) {
-            return 6
-        }
-        else {
-            return 3
-        }
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        print("theTag :\(collectionView.tag)")
-        
-        if(collectionView.tag == 1) {
-            
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath) as! HomeCategoryCollectionViewCell
-            
-            cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryElectronicsSampleImageName)
-            
-            return cell
 
-        }
-        else {
+    // MARK: - collectionView extension implementation
+    extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             
-            let firstHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeSingleCategoryCollectionViewCell", for: indexPath) as! HomeSingleCategoryCollectionViewCell
+            if(collectionView.tag == 1) {
+                return 6
+            }
             
-            return firstHomeSingleCategoryCollectionViewCell
+            else {
+                return 3
+            }
+            
             
         }
         
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            
+            if(collectionView.tag == 1) {
+                
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.HomeCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeCategoryCollectionViewCell
+                
+                cell.homeCategoryCollectionImageView.image = UIImage(named: LolyHubStyler.categoryElectronicsSampleImageName)
+                
+                return cell
+
+            }
+            else if(collectionView.tag == 2){
+                
+                let firstHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                
+                return firstHomeSingleCategoryCollectionViewCell
+                
+                
+            }
+            else {
+                let secondHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                
+                return secondHomeSingleCategoryCollectionViewCell
+            }
+            
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
-    }
-}
 
 
 
