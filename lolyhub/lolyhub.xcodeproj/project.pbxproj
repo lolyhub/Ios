@@ -20,6 +20,8 @@
 		18D631B81E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D631B71E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib */; };
 		18FC18171E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC18161E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift */; };
 		18FC18191E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FC18181E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib */; };
+		18FC18201E686FB7008A8338 /* CartWishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC181F1E686FB7008A8338 /* CartWishListTableViewCell.swift */; };
+		18FC18221E686FC7008A8338 /* CartWishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FC18211E686FC7008A8338 /* CartWishListTableViewCell.xib */; };
 		A1601CEC8F01B5EC823D7455 /* Pods_lolyhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D1E0670C95468046BF128A /* Pods_lolyhub.framework */; };
 		E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */; };
 		E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ADE1F1E52E0860065C918 /* ProductCollectionViewCell.swift */; };
@@ -108,6 +110,8 @@
 		18D631B71E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSingleCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		18FC18161E68212D008A8338 /* HomeLolyhubOfferCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLolyhubOfferCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		18FC18181E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeLolyhubOfferCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		18FC181F1E686FB7008A8338 /* CartWishListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartWishListTableViewCell.swift; sourceTree = "<group>"; };
+		18FC18211E686FC7008A8338 /* CartWishListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartWishListTableViewCell.xib; sourceTree = "<group>"; };
 		3A06159734B15997B22D7A64 /* Pods-lolyhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5095A693E86573D880F03 /* Pods-lolyhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolyhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolyhub/Pods-lolyhub.debug.xcconfig"; sourceTree = "<group>"; };
 		E91566CF1E2618D100860D9C /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
@@ -222,6 +226,15 @@
 			name = HomeScreenCells;
 			sourceTree = "<group>";
 		};
+		18FC181E1E686F61008A8338 /* CartFlow */ = {
+			isa = PBXGroup;
+			children = (
+				18FC181F1E686FB7008A8338 /* CartWishListTableViewCell.swift */,
+				18FC18211E686FC7008A8338 /* CartWishListTableViewCell.xib */,
+			);
+			name = CartFlow;
+			sourceTree = "<group>";
+		};
 		E9367F951E2781DB00199726 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +292,7 @@
 				E978C3E41E23B2C300B73BF6 /* Utilities */,
 				E9367F981E27826100199726 /* TabBarViewControllers */,
 				E9B50C1A1E4C70A70054A02D /* ProductFlow */,
+				18FC181E1E686F61008A8338 /* CartFlow */,
 				E978C3DD1E2388A700B73BF6 /* LoginSignup */,
 				E9367F951E2781DB00199726 /* TabBarController */,
 			);
@@ -511,6 +525,7 @@
 				E9B50C231E4C86AD0054A02D /* ProductTableViewCell.xib in Resources */,
 				E9EE04251E361022006C85FD /* OpenSans-Regular.ttf in Resources */,
 				E9EE04261E361022006C85FD /* OpenSans-Semibold.ttf in Resources */,
+				18FC18221E686FC7008A8338 /* CartWishListTableViewCell.xib in Resources */,
 				E9EE04271E361022006C85FD /* OpenSans-SemiboldItalic.ttf in Resources */,
 				E978C3B41E236B3F00B73BF6 /* LaunchScreen.storyboard in Resources */,
 				E978C3B11E236B3F00B73BF6 /* Assets.xcassets in Resources */,
@@ -592,6 +607,7 @@
 				18D631B61E66DB5C00886D13 /* HomeSingleCategoryCollectionViewCell.swift in Sources */,
 				18A5DD111E5ED8F000A0FBC0 /* HomeCategoryTableViewCell.swift in Sources */,
 				E978C3E11E239A7600B73BF6 /* LoginViewController.swift in Sources */,
+				18FC18201E686FB7008A8338 /* CartWishListTableViewCell.swift in Sources */,
 				E92ADE211E52E0860065C918 /* ProductCollectionViewCell.swift in Sources */,
 				E9B50C221E4C86AD0054A02D /* ProductTableViewCell.swift in Sources */,
 				18217F651E54396800E9D38D /* iCarousel.m in Sources */,

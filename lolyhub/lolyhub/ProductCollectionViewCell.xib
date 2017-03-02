@@ -39,7 +39,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Redeem for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-LJ-brH">
-                        <rect key="frame" x="8" y="214" width="93" height="21"/>
+                        <rect key="frame" x="8" y="214" width="92" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Bhh-2z-EZc"/>
                         </constraints>
@@ -48,7 +48,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2833 LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icy-Si-Tv3">
-                        <rect key="frame" x="124" y="215" width="48" height="21"/>
+                        <rect key="frame" x="123" y="215" width="49" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Pme-fo-44Z"/>
                         </constraints>
@@ -82,7 +82,7 @@
                         </constraints>
                         <state key="normal" image="cartSelected"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="CART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0T-Pu-Fed">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0T-Pu-Fed">
                         <rect key="frame" x="37" y="273" width="32" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="4Mq-4G-Fld"/>
@@ -91,7 +91,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="WISHLIST" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cj-ez-lKg">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="WISHLIST" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cj-ez-lKg">
                         <rect key="frame" x="111" y="273" width="60" height="19"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="19" id="QuK-v1-MEj"/>
@@ -100,7 +100,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJU-cs-lo7">
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJU-cs-lo7">
                         <rect key="frame" x="83" y="272" width="25" height="23"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="25" id="9no-AA-fHI"/>
