@@ -163,7 +163,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return 160
         }
         else if(indexPath.row == 2) {
-            return 320
+            return 385
         }
         else {
             return 153
