@@ -125,7 +125,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return 385
         }
         else if(indexPath.row == 4) {
-            return 275
+            return 480
         }
         else {
             return 153
