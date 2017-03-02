@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
    
@@ -87,6 +87,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell4
             
         }
+        else if(indexPath.row == 5) {
+            
+            let cell6 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, for: indexPath) as! HomeSingleCategoryTableViewCell
+            
+            
+            let thirdSingleCategoryView = cell6.viewWithTag(100) as? UICollectionView
+            thirdSingleCategoryView?.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier)
+            
+            return cell6
+
+        }
         else {
            let cell5 = homeTableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, for: indexPath) as! HomeLolyhubOfferCategoryTableViewCell
 
@@ -104,7 +115,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             HomeCategoryTableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
         }
         
-        if(indexPath.row == 2 || indexPath.row == 3) {
+        if(indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 5) {
             
             guard let HomeSingleCategoryTableViewCell = cell as? HomeSingleCategoryTableViewCell else { return }
             
@@ -121,7 +132,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else if(indexPath.row == 1) {
             return 160
         }
-        else if(indexPath.row == 2 || indexPath.row == 3) {
+        else if(indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 5) {
             return 385
         }
         else if(indexPath.row == 4) {
@@ -240,10 +251,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 
             }
-            else {
+            else if(collectionView.tag == 3){
                 let secondHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
                 
                 return secondHomeSingleCategoryCollectionViewCell
+            }
+            else {
+                let thirdHomeSingleCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryCollectionViewCellIdentifier, for: indexPath) as! HomeSingleCategoryCollectionViewCell
+                
+                return thirdHomeSingleCategoryCollectionViewCell
             }
             
         }
