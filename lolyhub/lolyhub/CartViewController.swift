@@ -10,6 +10,7 @@ import UIKit
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var checkoutButton: UIButton!
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     
     @IBOutlet weak var cartTableView: UITableView!
@@ -26,6 +27,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - setup methods
     func setupView() {
         self.cartTableView.register(UINib.init(nibName: "CartWishListTableViewCell", bundle: nil), forCellReuseIdentifier: "CartWishListTableViewCell")
+        self.checkoutButton.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {
