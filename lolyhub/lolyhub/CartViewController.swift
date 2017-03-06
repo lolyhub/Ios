@@ -61,6 +61,25 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction:UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "  ", handler: { (tvra:UITableViewRowAction!, indexPath:IndexPath) -> Void in
+         
+            print("hellooo")
+            
+        })
+        
+ 
+        
+        //Change background color
+        deleteAction.backgroundColor = UIColor(red: 203/255, green: 76/255, blue: 76/255, alpha: 1)
+        
+        deleteAction.backgroundColor = UIColor(patternImage: UIImage(named: "cellDeleteImage")!)
+        
+        return [deleteAction]
+    }
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
