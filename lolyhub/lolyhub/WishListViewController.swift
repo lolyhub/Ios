@@ -8,17 +8,54 @@
 
 import UIKit
 
-class WishListViewController: UIViewController {
+class WishListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var moveToCartButton: UIButton!
+    
+    @IBOutlet weak var wishListTableView: UITableView!
 
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupView()
         addSideMenuFunctionality(to: sideMenuButton, on: self)
         addNavigationTitleImage(on: self)
         // Do any additional setup after loading the view.
     }
+    
+    func setupView() {
+        self.wishListTableView.register(UINib.init(nibName: "CartWishListTableViewCell", bundle: nil), forCellReuseIdentifier: "CartWishListTableViewCell")
+        self.moveToCartButton.layer.cornerRadius = 5
+    }
 
+    // MARK: - Tableview delegate and dataSource methods
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let wishListCell = self.wishListTableView.dequeueReusableCell(withIdentifier: "CartWishListTableViewCell", for: indexPath) as! CartWishListTableViewCell
+        
+        wishListCell.increaseCartButton.styleViewMoreButton()
+        wishListCell.decreaseCartButton.styleViewMoreButton()
+        wishListCell.cartQuantityLabel.layer.borderColor = LolyHubStyler.viewMoreButtonGreyBorderColor.cgColor
+        wishListCell.cartQuantityLabel.layer.borderWidth = 1.0
+        
+        wishListCell.cartStatusButton.isHidden = false
+        wishListCell.moveToCartLabel.isHidden = false
+        
+        return wishListCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

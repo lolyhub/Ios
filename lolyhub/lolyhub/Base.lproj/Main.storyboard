@@ -1222,18 +1222,52 @@
                     <view key="view" contentMode="scaleToFill" id="o4c-Hq-kEP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrs-fJ-rfy">
+                                <rect key="frame" x="8" y="575" width="359" height="35"/>
+                                <color key="backgroundColor" red="0.44534021620000003" green="0.68551617860000003" blue="0.1616037488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hVX-mk-hdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                <state key="normal" title="Move all items to cart">
+                                    <color key="titleColor" red="0.97638529539999996" green="0.97652524709999999" blue="0.97635477780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-du-8Vf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="503" id="LyH-Oy-L4c"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="quG-Jo-wRL" id="TS9-hN-iTL"/>
+                                    <outlet property="delegate" destination="quG-Jo-wRL" id="QHF-EA-7vi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LA6-du-8Vf" firstAttribute="leading" secondItem="o4c-Hq-kEP" secondAttribute="leading" id="4n7-m9-ScA"/>
+                            <constraint firstItem="xfa-qS-tGG" firstAttribute="top" secondItem="jrs-fJ-rfy" secondAttribute="bottom" constant="8" id="Djz-yj-e1i"/>
+                            <constraint firstItem="LA6-du-8Vf" firstAttribute="top" secondItem="o4c-Hq-kEP" secondAttribute="top" constant="64" id="Htc-Js-2dE"/>
+                            <constraint firstItem="jrs-fJ-rfy" firstAttribute="leading" secondItem="o4c-Hq-kEP" secondAttribute="leading" constant="8" id="Idl-Fh-9cP"/>
+                            <constraint firstAttribute="trailing" secondItem="LA6-du-8Vf" secondAttribute="trailing" id="kVe-36-Ig1"/>
+                            <constraint firstAttribute="trailing" secondItem="jrs-fJ-rfy" secondAttribute="trailing" constant="8" id="ydz-ui-eY5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cdB-yF-3oL">
                         <barButtonItem key="leftBarButtonItem" image="hamburgerMenuButtonIcon" id="PN3-ca-RCn"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="moveToCartButton" destination="jrs-fJ-rfy" id="Wi6-s7-hwl"/>
                         <outlet property="sideMenuButton" destination="PN3-ca-RCn" id="dmf-8O-hDt"/>
+                        <outlet property="wishListTableView" destination="LA6-du-8Vf" id="IHX-Mg-vMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ld4-Xu-oCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="1506"/>
+            <point key="canvasLocation" x="-444" y="1505.3973013493255"/>
         </scene>
         <!--CartViewController-->
         <scene sceneID="aih-bU-bE5">
@@ -1304,7 +1338,7 @@
                                             <constraint firstAttribute="height" constant="35" id="M1M-n2-Iko"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="g4a-aP-CQd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
                                         <state key="normal" title="Checkout">
                                             <color key="titleColor" red="0.97638529539999996" green="0.97652524709999999" blue="0.97635477780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
