@@ -8,15 +8,41 @@
 
 import UIKit
 
-class BaseTabBarController: UITabBarController {
+class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.delegate = self
+       // self.revealViewController().rightRevealToggle(animated: true)
         
         
         // Do any additional setup after loading the view.
     }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if(self.selectedIndex == 4){
+            self.revealViewController().rightRevealToggle(animated: true)
+        }
+        
+        
+        
+    }
+    
+//    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+//        
+//        
+//        if(selectedIndex == 4) {
+//            self.revealViewController().rightRevealToggle(animated: true)
+//            return false
+//        }
+//        
+//        else {
+//            return true
+//        }
+// 
+//        
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

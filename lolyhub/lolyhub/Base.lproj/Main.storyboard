@@ -204,7 +204,7 @@
                                 <state key="normal" backgroundImage="twitterIconImage"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4a-d3-wa4">
-                                <rect key="frame" x="174" y="386" width="29" height="21"/>
+                                <rect key="frame" x="173.5" y="386" width="29" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Vu1-ZE-LD5"/>
                                 </constraints>
@@ -1267,7 +1267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ld4-Xu-oCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="1505.3973013493255"/>
+            <point key="canvasLocation" x="-444" y="1505"/>
         </scene>
         <!--CartViewController-->
         <scene sceneID="aih-bU-bE5">
@@ -1296,7 +1296,7 @@
                                 <rect key="frame" x="0.0" y="478" width="375" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr0-y0-thK">
-                                        <rect key="frame" x="8" y="8" width="173.5" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="173" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="VR4-9d-Ggz"/>
                                         </constraints>
@@ -1314,7 +1314,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="166 LP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWJ-lW-cwC">
-                                        <rect key="frame" x="310.5" y="8" width="56.5" height="21"/>
+                                        <rect key="frame" x="310" y="8" width="57" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cKt-aO-zTx"/>
                                         </constraints>
@@ -1385,7 +1385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxr-EQ-cKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="2462.5187406296855"/>
+            <point key="canvasLocation" x="-650" y="2463"/>
         </scene>
         <!--Home-->
         <scene sceneID="9S3-rt-Zx4">
@@ -1456,7 +1456,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="quG-Jo-wRL" kind="relationship" relationship="rootViewController" id="RdG-In-9qZ"/>
+                        <segue destination="quG-Jo-wRL" kind="relationship" relationship="rootViewController" id="L3V-1S-lN7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKn-Eu-shS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1475,7 +1475,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="m6i-bl-Y83" kind="relationship" relationship="rootViewController" id="Cuk-dz-AaV"/>
+                        <segue destination="m6i-bl-Y83" kind="relationship" relationship="rootViewController" id="E2v-lb-BqP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7I-su-YuV" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,8 @@ func addSideMenuFunctionality(to sideButton: UIBarButtonItem, on currentViewCont
     
         sideButton.target = currentViewController.revealViewController()
         sideButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        
         currentViewController.view.addGestureRecognizer(currentViewController.revealViewController().panGestureRecognizer())
         
     }
