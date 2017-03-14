@@ -11,6 +11,7 @@ import FacebookCore
 import FacebookLogin
 
 
+
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextField: UITextField!
@@ -55,6 +56,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 print("user cancelled fb login")
             case .success(grantedPermissions: let grantP, declinedPermissions: let declinedP, token: let fbaccessToken):
                 print("fb login successful")
+               
+                // ["fields":"email,name"]
+                
+                // ["fields": "id, name, first_name, last_name, picture.type(large), email"]
+                
+                let request = GraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"], accessToken: AccessToken.current, httpMethod: .GET, apiVersion: FacebookCore.GraphAPIVersion.defaultVersion)
+                request.start { (response, result) in
+                    switch result {
+                    case .success(let value):
+                        print(value.dictionaryValue)
+                    case .failed(let error):
+                        print(error)
+                    }
+                }
                 
                 
             }
@@ -62,6 +77,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
 
+    
+    func getFbData() {
+        
+        
+        
+    }
     
 
     override func didReceiveMemoryWarning() {
