@@ -2,6 +2,9 @@ target ‘lolyhub’ do
   pod 'IQKeyboardManagerSwift'
 use_frameworks!
 pod 'LUExpandableTableView'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 end
 
 

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FacebookCore
+import FacebookLogin
+
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -23,6 +26,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         setupView()
         
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +42,27 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
          self.passwordTextField.stylePasswordHelperTextField()
         
     }
+    
+    @IBAction func facebookLoginClicked(_ sender: Any) {
+        
+        let fbloginManager = LoginManager()
+        
+        fbloginManager.logIn([.publicProfile], viewController: self) { (LoginResult) in
+            switch LoginResult {
+            case .failed(let error):
+                print("fblogin error : \(error)")
+            case .cancelled:
+                print("user cancelled fb login")
+            case .success(grantedPermissions: let grantP, declinedPermissions: let declinedP, token: let fbaccessToken):
+                print("fb login successful")
+                
+                
+            }
+        }
+        
+    }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
