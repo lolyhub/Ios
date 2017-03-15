@@ -11,6 +11,7 @@
 		18217F5F1E5437C600E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
 		18217F601E5437C600E9D38D /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18217F651E54396800E9D38D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217F641E54396800E9D38D /* iCarousel.m */; };
+		185D117F1E792495009B183A /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185D117E1E792495009B183A /* GoogleService-Info-2.plist */; };
 		188E88B71E66A6E700EC1710 /* HomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E88B61E66A6E700EC1710 /* HomeCategoryCollectionViewCell.swift */; };
 		188E88B91E66BCD300EC1710 /* HomeSingleCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E88B81E66BCD300EC1710 /* HomeSingleCategoryTableViewCell.swift */; };
 		188E88BB1E66BD4B00EC1710 /* HomeSingleCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188E88BA1E66BD4B00EC1710 /* HomeSingleCategoryTableViewCell.xib */; };
@@ -101,6 +102,7 @@
 		18217F5D1E5437BF00E9D38D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18217F631E54396800E9D38D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		18217F641E54396800E9D38D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		185D117E1E792495009B183A /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		188E88B61E66A6E700EC1710 /* HomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		188E88B81E66BCD300EC1710 /* HomeSingleCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSingleCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		188E88BA1E66BD4B00EC1710 /* HomeSingleCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSingleCategoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				E978C3B01E236B3F00B73BF6 /* Assets.xcassets */,
 				E978C3B21E236B3F00B73BF6 /* LaunchScreen.storyboard */,
 				E978C3B51E236B3F00B73BF6 /* Info.plist */,
+				185D117E1E792495009B183A /* GoogleService-Info-2.plist */,
 				E978C3E41E23B2C300B73BF6 /* Utilities */,
 				E9367F981E27826100199726 /* TabBarViewControllers */,
 				E9B50C1A1E4C70A70054A02D /* ProductFlow */,
@@ -528,6 +531,7 @@
 				18FC18221E686FC7008A8338 /* CartWishListTableViewCell.xib in Resources */,
 				E9EE04271E361022006C85FD /* OpenSans-SemiboldItalic.ttf in Resources */,
 				E978C3B41E236B3F00B73BF6 /* LaunchScreen.storyboard in Resources */,
+				185D117F1E792495009B183A /* GoogleService-Info-2.plist in Resources */,
 				E978C3B11E236B3F00B73BF6 /* Assets.xcassets in Resources */,
 				E978C3AF1E236B3F00B73BF6 /* Main.storyboard in Resources */,
 				E91566D01E2618D100860D9C /* StoryboardiPad.storyboard in Resources */,

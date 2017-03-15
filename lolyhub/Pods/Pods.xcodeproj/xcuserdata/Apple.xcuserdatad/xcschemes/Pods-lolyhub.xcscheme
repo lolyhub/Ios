@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D692B6461DF54D1D38CBFCCBD2486245"
+               BlueprintIdentifier = "D7C32299A427C0B30704576E9EDFFF76"
                BuildableName = "Pods_lolyhub.framework"
                BlueprintName = "Pods-lolyhub"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D692B6461DF54D1D38CBFCCBD2486245"
+            BlueprintIdentifier = "D7C32299A427C0B30704576E9EDFFF76"
             BuildableName = "Pods_lolyhub.framework"
             BlueprintName = "Pods-lolyhub"
             ReferencedContainer = "container:Pods.xcodeproj">

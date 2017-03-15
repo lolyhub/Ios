@@ -12,7 +12,7 @@ import FacebookLogin
 
 
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
 
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         setupView()
         
-        
+        GIDSignIn.sharedInstance().uiDelegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -78,12 +78,68 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
 
     
+    
     func getFbData() {
         
         
         
     }
     
+    @IBAction func googleSignInClicked(_ sender: Any) {
+        
+       
+//        var configureError: NSError?
+//        GGLContext.sharedInstance().configureWithError(&configureError)
+//        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+
+        
+        
+        GIDSignIn.sharedInstance().clientID = "708682956745-rnth80n086l3jkrhvo4kode6df24gfmo.apps.googleusercontent.com"
+     //   GIDSignIn.sharedInstance().scopes.append("https://www.googleapis.com/auth/plus.login")
+     //   GIDSignIn.sharedInstance().scopes.append("https://www.googleapis.com/auth/plus.me")
+        
+      //  GIDSignIn.sharedInstance().signInSilently()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
+        
+        GIDSignIn.sharedInstance().signIn()
+        
+    }
+    
+    //MARK:Google SignIn Delegate
+    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
+        // myActivityIndicator.stopAnimating()
+    }
+    
+    // Present a view that prompts the user to sign in with Google
+    func sign(_ signIn: GIDSignIn!,
+              present viewController: UIViewController!) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func sign(_ signIn: GIDSignIn!,
+              dismiss viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    //completed sign In
+    public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            let userId = user.userID                  // For client-side use only!
+            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            // ...
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
