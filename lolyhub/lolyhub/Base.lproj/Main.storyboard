@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ZV-5D-ASD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xw1-li-uHu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1409,11 +1409,11 @@
             </objects>
             <point key="canvasLocation" x="-444" y="-1080"/>
         </scene>
-        <!--Search-->
+        <!--Shop-->
         <scene sceneID="dne-rp-DFQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="searchTabBarICon" id="SXY-Lb-I3j"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="shopBottomBarIcon" selectedImage="shopBottomBarIcon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1432,7 +1432,7 @@
         <scene sceneID="f1R-RS-glx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="yellowDotIcon" id="7uM-Uc-ap3"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="walletBottomBarIcon" selectedImage="walletBottomBarIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1451,7 +1451,7 @@
         <scene sceneID="eDR-jV-Nap">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="greenDotIcon" id="Rpd-Ld-hRe"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="wishListBottomBarIcon" selectedImage="wishListBottomBarIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1470,7 +1470,7 @@
         <scene sceneID="X0d-SA-HLU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="3" title="Cart" image="redDotIcon" id="Mif-R8-oti"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Cart" image="cartBottomBarIcon" selectedImage="cartBottomBarIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1505,21 +1505,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cartBottomBarIcon" width="21" height="21"/>
         <image name="cartNotSelected" width="15" height="15"/>
         <image name="categoryFoodSample" width="75" height="86"/>
         <image name="facebookIconImage" width="337" height="140"/>
         <image name="googlePlusIconImage" width="337" height="140"/>
-        <image name="greenDotIcon" width="25" height="25"/>
         <image name="hamburgerMenuButtonIcon" width="22" height="22"/>
         <image name="homeSliderSample" width="319" height="194"/>
         <image name="lolyhubColorBar" width="310" height="5"/>
         <image name="lolyhubLogo" width="318" height="136"/>
         <image name="productListFilterIcon" width="55" height="74"/>
         <image name="productListTableIcon" width="74" height="65"/>
-        <image name="redDotIcon" width="25" height="25"/>
-        <image name="searchTabBarICon" width="25" height="25"/>
+        <image name="shopBottomBarIcon" width="21" height="21"/>
         <image name="twitterIconImage" width="337" height="140"/>
+        <image name="walletBottomBarIcon" width="21" height="21"/>
+        <image name="wishListBottomBarIcon" width="21" height="21"/>
         <image name="wishSelected" width="15" height="15"/>
-        <image name="yellowDotIcon" width="25" height="25"/>
     </resources>
 </document>
