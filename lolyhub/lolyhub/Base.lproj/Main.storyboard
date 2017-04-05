@@ -768,7 +768,6 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1137254902" green="0.54901960780000003" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8fn-0h-6M8" secondAttribute="trailing" constant="8" id="T7Z-Sa-8dP"/>
                                     <constraint firstItem="bM7-pV-oRc" firstAttribute="top" secondItem="nkM-U8-Cp2" secondAttribute="top" constant="20" id="VX0-ms-Oly"/>
@@ -793,7 +792,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Program" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaW-Tb-qKG">
-                                        <rect key="frame" x="8" y="10" width="99.5" height="30"/>
+                                        <rect key="frame" x="8" y="10" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="0Vh-BW-43O"/>
                                         </constraints>
@@ -802,7 +801,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="LP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5e-KT-ur9">
-                                        <rect key="frame" x="230.5" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="231" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="Kj8-3H-4cg"/>
                                         </constraints>
@@ -811,7 +810,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Exchange" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-42-eMz">
-                                        <rect key="frame" x="291.5" y="10" width="75.5" height="30"/>
+                                        <rect key="frame" x="292" y="10" width="75" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="Uua-mr-b2I"/>
                                         </constraints>
@@ -820,14 +819,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SK5-Xu-nG6">
-                                        <rect key="frame" x="109" y="0.0" width="2" height="50"/>
+                                        <rect key="frame" x="110" y="0.0" width="2" height="50"/>
                                         <color key="backgroundColor" red="0.87071126699447632" green="0.8745993971824646" blue="0.8701128363609314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="m0B-64-ArN"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBo-wh-WCL">
-                                        <rect key="frame" x="130.5" y="10" width="57" height="30"/>
+                                        <rect key="frame" x="132" y="10" width="57" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="57" id="DW4-5Y-taP"/>
                                         </constraints>
@@ -836,14 +835,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK3-aD-E4u">
-                                        <rect key="frame" x="205" y="0.0" width="2" height="50"/>
+                                        <rect key="frame" x="206" y="0.0" width="2" height="50"/>
                                         <color key="backgroundColor" red="0.87071126699447632" green="0.8745993971824646" blue="0.8701128363609314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="5Wi-kG-vGB"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrC-6d-Ubg">
-                                        <rect key="frame" x="280.5" y="0.0" width="2" height="50"/>
+                                        <rect key="frame" x="281" y="0.0" width="2" height="50"/>
                                         <color key="backgroundColor" red="0.87071126699447632" green="0.8745993971824646" blue="0.8701128363609314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="d35-DP-VjG"/>
