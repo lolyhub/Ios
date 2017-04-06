@@ -26,6 +26,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="269"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-PW-F82">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walletCellSampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="toY-nJ-Jc0">
                         <rect key="frame" x="0.0" y="24" width="100" height="100"/>
                         <constraints>
@@ -34,7 +39,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000  points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0P-F3-vEr">
-                        <rect key="frame" x="130" y="25" width="52" height="100"/>
+                        <rect key="frame" x="130" y="25" width="53.5" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="nKx-14-BQU"/>
                         </constraints>
@@ -57,7 +62,7 @@
                         <state key="normal" image="plusButton"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="166  LP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-b5-LPH">
-                        <rect key="frame" x="209" y="24" width="61" height="100"/>
+                        <rect key="frame" x="210.5" y="24" width="59.5" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="Ko1-sy-pfB"/>
                         </constraints>
@@ -69,7 +74,7 @@
                         <rect key="frame" x="0.0" y="149" width="375" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlD-pP-he9">
-                                <rect key="frame" x="8" y="12" width="67" height="21"/>
+                                <rect key="frame" x="8" y="12" width="68.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5g7-pM-MCB"/>
                                 </constraints>
@@ -78,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xD-f8-Ysy">
-                                <rect key="frame" x="83" y="8" width="80" height="30"/>
+                                <rect key="frame" x="84.5" y="8" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="4sd-n7-3bQ"/>
                                     <constraint firstAttribute="height" constant="30" id="8uu-se-THC"/>
@@ -88,7 +93,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3E-Jd-y7x">
-                                <rect key="frame" x="193" y="12" width="11" height="21"/>
+                                <rect key="frame" x="194.5" y="12" width="11" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ya0-v3-gaQ"/>
                                 </constraints>
@@ -97,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j17-mD-7lC">
-                                <rect key="frame" x="230" y="13" width="90" height="21"/>
+                                <rect key="frame" x="231.5" y="13" width="88.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ZKy-Da-TeX"/>
                                 </constraints>
@@ -106,7 +111,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your remaining points balance will be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvi-3L-ehU">
-                                <rect key="frame" x="8" y="41" width="233" height="21"/>
+                                <rect key="frame" x="8" y="41" width="244" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ioI-ok-Xch"/>
                                 </constraints>
@@ -115,7 +120,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="000 Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-Ai-OFY">
-                                <rect key="frame" x="249" y="41" width="118" height="21"/>
+                                <rect key="frame" x="260" y="41" width="107" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="DXt-6R-hWX"/>
                                 </constraints>
@@ -130,7 +135,7 @@
                                     <constraint firstAttribute="height" constant="35" id="ypG-Ef-Tgb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
-                                <state key="normal" title="+ Add Program">
+                                <state key="normal" title="Exchange">
                                     <color key="titleColor" red="0.97638529539999996" green="0.97652524709999999" blue="0.97635477780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
