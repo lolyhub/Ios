@@ -16,11 +16,15 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var addToProgramButton: UIButton!
     
+    var selectedIndex = -2
+    var arrayCount = 4
+    
     var expandedRows = Set<Int>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        walletTableView.delegate = self
         setupView()
         addSideMenuFunctionality(to: sideMenuButton, on: self)
         addNavigationTitleImage(on: self)
@@ -41,26 +45,39 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if selectedIndex >= 0 {
+            return arrayCount+1
+        }
+        else{
+            return arrayCount
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let walletCell = self.walletTableView.dequeueReusableCell(withIdentifier: "WalletTableViewCell", for: indexPath) as! WalletTableViewCell
+        if  indexPath.row == selectedIndex+1 {
+            let expandedCell = tableView.dequeueReusableCell(withIdentifier:
+                "expanded", for: indexPath)
+            return expandedCell
+        }
+        else{
+            let walletCell = self.walletTableView.dequeueReusableCell(withIdentifier: "WalletTableViewCell", for: indexPath) as! WalletTableViewCell
+            
+            walletCell.isExpanded = self.expandedRows.contains(indexPath.row)
+            
+            
+            
+            //        wishListCell.increaseCartButton.styleViewMoreButton()
+            //        wishListCell.decreaseCartButton.styleViewMoreButton()
+            //        wishListCell.cartQuantityLabel.layer.borderColor = LolyHubStyler.viewMoreButtonGreyBorderColor.cgColor
+            //        wishListCell.cartQuantityLabel.layer.borderWidth = 1.0
+            //
+            //        wishListCell.cartStatusButton.isHidden = false
+            //        wishListCell.moveToCartLabel.isHidden = false
+            //        
+            return walletCell
+        }
         
-        walletCell.isExpanded = self.expandedRows.contains(indexPath.row)
-        
-        
-        
-//        wishListCell.increaseCartButton.styleViewMoreButton()
-//        wishListCell.decreaseCartButton.styleViewMoreButton()
-//        wishListCell.cartQuantityLabel.layer.borderColor = LolyHubStyler.viewMoreButtonGreyBorderColor.cgColor
-//        wishListCell.cartQuantityLabel.layer.borderWidth = 1.0
-//        
-//        wishListCell.cartStatusButton.isHidden = false
-//        wishListCell.moveToCartLabel.isHidden = false
-//        
-        return walletCell
-    }
+        }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
@@ -80,10 +97,39 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return [deleteAction]
     }
     
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 150
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.row == selectedIndex{
+            selectedIndex = -2
+        }
+        else{
+            if selectedIndex >= 0{
+                if indexPath.row > selectedIndex {
+                 selectedIndex =  indexPath.row - 1
+                }
+                else{
+                 selectedIndex =  indexPath.row
+                }
+                
+            }
+            else{
+                 selectedIndex =  indexPath.row
+            }
+           
+        }
+        
+        tableView.reloadData();
+        //tableView.scrollToRow(at:indexPath , at: .top, animated: true)
+    }
+    
+//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        
+//    }
     
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

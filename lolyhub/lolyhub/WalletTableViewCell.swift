@@ -20,14 +20,7 @@ class WalletTableViewCell: UITableViewCell {
         {
         didSet
         {
-            if !isExpanded {
-                self.exchangeViewHeightConstraint.constant = 0.0
-                self.exchangeButton.isHidden = true
-                
-            } else {
-                self.exchangeViewHeightConstraint.constant = 120.0
-                self.exchangeButton.isHidden = false
-            }
+           
         }
     }
     
