@@ -16,6 +16,8 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var addToProgramButton: UIButton!
     
+    var expandedRows = Set<Int>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,9 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     func setupView() {
         self.walletTableView.register(UINib.init(nibName: "WalletTableViewCell", bundle: nil), forCellReuseIdentifier: "WalletTableViewCell")
+        
+       // self.walletTableView.rowHeight = UITableViewAutomaticDimension
+        
         //self.moveToCartButton.layer.cornerRadius = 5
     }
     
@@ -40,7 +45,11 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let wishListCell = self.walletTableView.dequeueReusableCell(withIdentifier: "WalletTableViewCell", for: indexPath) as! WalletTableViewCell
+        let walletCell = self.walletTableView.dequeueReusableCell(withIdentifier: "WalletTableViewCell", for: indexPath) as! WalletTableViewCell
+        
+        walletCell.isExpanded = self.expandedRows.contains(indexPath.row)
+        
+        
         
 //        wishListCell.increaseCartButton.styleViewMoreButton()
 //        wishListCell.decreaseCartButton.styleViewMoreButton()
@@ -50,7 +59,7 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //        wishListCell.cartStatusButton.isHidden = false
 //        wishListCell.moveToCartLabel.isHidden = false
 //        
-        return wishListCell
+        return walletCell
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
@@ -72,10 +81,14 @@ class WalletViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
+    
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 270
+//    }
 
     
     override func didReceiveMemoryWarning() {
