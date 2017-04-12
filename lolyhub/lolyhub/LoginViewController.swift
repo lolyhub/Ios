@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
     }
     
     @IBAction func facebookLoginClicked(_ sender: Any) {
-        
+    
         let fbloginManager = LoginManager()
         
         fbloginManager.logIn([.publicProfile], viewController: self) { (LoginResult) in
@@ -163,9 +163,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
         }
         else {
         
+            LHUtils.showLoadingInView(view: self.view!, withText: "Loading")
+            
             let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
             
             RestClient.post(url: "login", parameters: parameters as [String : AnyObject], onSuccess: { (resp) in
+                LHUtils.hideLoadingInView(view: self.view)
                 print("resp is : \(resp)")
                 
                 print("login ok")

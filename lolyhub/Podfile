@@ -9,6 +9,7 @@ pod 'FacebookShare'
 pod 'Google/SignIn'
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'MBProgressHUD', '~> 1.0.0'
 end
 
 
