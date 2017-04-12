@@ -70,6 +70,10 @@ extension UIButton {
         self.layer.borderWidth = 1
     }
     
+    func styleDisabledButton() {
+        self.backgroundColor = UIColor.lightGray
+    }
+    
 }
 
 extension UIView {

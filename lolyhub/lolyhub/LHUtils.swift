@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+
+
+class LHUtils : NSObject {
+    
+    
+    
+}
+
+
 extension UIStoryboard {
 
     //Main Storyboard

@@ -18,6 +18,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
             [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
         
         self.usernameTextField.stylePrimaryTextField()
-         self.passwordTextField.stylePasswordHelperTextField()
+        self.passwordTextField.stylePasswordHelperTextField()
+        
         
     }
     
@@ -152,6 +154,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
         textField.resignFirstResponder()
         return true
     }
+    
+    
+    @IBAction func loginClicked(_ sender: Any) {
+        
+        if((usernameTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)!) {
+            print("please enter username and password")
+        }
+        else {
+        
+            let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
+            
+            RestClient.post(url: "login", parameters: parameters as [String : AnyObject], onSuccess: { (resp) in
+                print("resp is : \(resp)")
+                
+                print("login ok")
+                
+                
+            }, onError: { (error) in
+                print("error :\(error)")
+                print("error occured")
+            })
+        }
+       
+        
+    }
+    
     
     
 
