@@ -163,18 +163,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
         }
         else {
         
-            LHUtils.showLoadingInView(view: self.view!, withText: "Loading")
-            
+            LHUtils.showLoadingView()
             let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
             
             RestClient.post(url: "login", parameters: parameters as [String : AnyObject], onSuccess: { (resp) in
-                LHUtils.hideLoadingInView(view: self.view)
+                LHUtils.hideLoadingView()
                 print("resp is : \(resp)")
                 
                 print("login ok")
                 
                 
             }, onError: { (error) in
+                LHUtils.hideLoadingView()
                 print("error :\(error)")
                 print("error occured")
             })

@@ -5,4 +5,5 @@
 #import "SWRevealViewController.h"
 #import "iCarousel.h"
 #import <Google/SignIn.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+

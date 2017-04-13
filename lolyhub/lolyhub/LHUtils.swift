@@ -8,26 +8,23 @@
 
 import Foundation
 import UIKit
-import MBProgressHUD
+import SVProgressHUD
 
 
 class LHUtils : NSObject {
     
-    static var progressView:MBProgressHUD!
-    
-    class func showLoadingInView(view:UIView, withText text:String="") -> UIView {
+    static func showLoadingView() {
         
-        progressView = MBProgressHUD.showAdded(to: view, animated: true)
-        progressView.label.text = text+"..."
-        progressView.label.textColor = UIColor.black
-        progressView.label.font = UIFont.setOpenSansLight(size: 14)
-        progressView.bezelView.color = UIColor.gray
-        return progressView
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultAnimationType(SVProgressHUDAnimationType.flat)
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.light)
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
+        SVProgressHUD.show(withStatus: "Loading..")
         
     }
     
-    class func hideLoadingInView(view:UIView) {
-        MBProgressHUD.hide(for: view, animated: true)
+    static func hideLoadingView() {
+        SVProgressHUD.dismiss()
     }
     
 }
