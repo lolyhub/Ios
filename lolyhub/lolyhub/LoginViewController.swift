@@ -163,6 +163,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
         }
         else {
         
+            self.view.endEditing(true)
             LHUtils.showLoadingView()
             let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
             
@@ -170,12 +171,29 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
                 LHUtils.hideLoadingView()
                 print("resp is : \(resp)")
                 
+                if let resultObject = resp as? NSDictionary {
+                    let resultMessage:String = resultObject.object(forKey: "ResultMsg") as! String
+                    
+                    if(resultMessage == "Done") {
+                        LHUtils.showAlertWith(title: "Success", message: "Login successful", viewController: self)
+                    }
+                    
+                    else {
+                        LHUtils.showAlertWith(title: "Login fail", message: "Username or password is wrong", viewController: self)
+                    }
+                    
+                }
+                
                 print("login ok")
+                
+                
                 
                 
             }, onError: { (error) in
                 LHUtils.hideLoadingView()
                 print("error :\(error)")
+                
+                LHUtils.showAlertWith(title: "Oops", message: "Something went wrong. Please try again later", viewController: self)
                 print("error occured")
             })
         }
