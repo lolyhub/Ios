@@ -159,33 +159,39 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
     @IBAction func loginClicked(_ sender: Any) {
         
         if((usernameTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)!) {
-            print("please enter username and password")
+            LHUtils.showAlertWith(title: "Fields missing", message: AppMessages.enterUsernamePasswordText, viewController: self)
         }
         else {
         
             self.view.endEditing(true)
             LHUtils.showLoadingView()
-            let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
             
-            RestClient.post(url: "login", parameters: parameters as [String : AnyObject], onSuccess: { (resp) in
+            let parameters : [String : Any] = [UserAPI.UserRequestKeys.userName.rawValue : usernameTextField.text!, UserAPI.UserRequestKeys.password.rawValue : passwordTextField.text!]
+            
+            
+            
+          //  let parameters : [String : Any] = ["userEmail":usernameTextField.text!,"password":passwordTextField.text!]
+            
+            RestClient.post(url: UserAPI.LoginEndPoints.login.rawValue, parameters: parameters as [String : AnyObject], onSuccess: { (resp) in
                 LHUtils.hideLoadingView()
-                print("resp is : \(resp)")
+                print("response is : \(resp)")
                 
                 if let resultObject = resp as? NSDictionary {
-                    let resultMessage:String = resultObject.object(forKey: "ResultMsg") as! String
+                    let resultMessage:String = resultObject.object(forKey: UserAPI.UserResponseKeys.loginResultMessage.rawValue) as! String
                     
-                    if(resultMessage == "Done") {
-                        LHUtils.showAlertWith(title: "Success", message: "Login successful", viewController: self)
+                    if(resultMessage == UserAPI.UserResponseKeys.loginSuccessful.rawValue) {
+                        LHUtils.showAlertWith(title: "Success", message: AppMessages.loginSuccessFullText, viewController: self)
                     }
                     
                     else {
-                        LHUtils.showAlertWith(title: "Login fail", message: "Username or password is wrong", viewController: self)
+                        LHUtils.showAlertWith(title: "Login fail", message: AppMessages.loginFailText, viewController: self)
                     }
                     
                 }
                 
-                print("login ok")
+                print("login ok") 
                 
+                 
                 
                 
                 
@@ -193,7 +199,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
                 LHUtils.hideLoadingView()
                 print("error :\(error)")
                 
-                LHUtils.showAlertWith(title: "Oops", message: "Something went wrong. Please try again later", viewController: self)
+                LHUtils.showAlertWith(title: "Oops", message: AppMessages.somethingWentWrongText, viewController: self)
                 print("error occured")
             })
         }

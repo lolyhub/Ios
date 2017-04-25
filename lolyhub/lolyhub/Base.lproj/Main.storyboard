@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ZV-5D-ASD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xw1-li-uHu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hw1-Yv-5Mm" id="xdu-Fa-Ydz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -792,7 +792,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EUc-Tl-7lN" id="MdG-8c-vYw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-dl-KmS">
@@ -1051,7 +1051,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="310"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XOP-fG-MjZ" id="hdX-SX-mUF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-ML-Hps" customClass="iCarousel">
@@ -1086,7 +1086,7 @@
                                         <rect key="frame" x="0.0" y="338" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZN-Bd-KtK" id="Dfl-rt-6Ld">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-jo-P0H">
@@ -1161,7 +1161,7 @@
                                         <rect key="frame" x="0.0" y="498" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zlu-vW-apb" id="cKz-rz-tYd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSliderSample" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-3n-RIN">
@@ -1680,7 +1680,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="hamburgerMenuButtonIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1699,7 +1699,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Shop" image="shopBottomBarIcon" selectedImage="shopBottomBarIcon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1718,7 +1718,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="walletBottomBarIcon" selectedImage="walletBottomBarIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1737,7 +1737,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="wishListBottomBarIcon" selectedImage="wishListBottomBarIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1756,7 +1756,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Cart" image="cartBottomBarIcon" selectedImage="cartBottomBarIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1774,7 +1774,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
