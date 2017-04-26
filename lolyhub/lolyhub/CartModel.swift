@@ -25,7 +25,7 @@ class Cart {
     
     func updateProductQuantity(product : Product, operation : Int){
         let count = product.cartCount
-        let existProduct = productList.isExists(product: product)
+        let existProduct = productList.isInCartExists(product: product)
         if  existProduct.0{
             switch operation{
             case 0:

@@ -22,6 +22,9 @@ class Product : NSObject {
     var cartCount : Int = 0
     var previousCount : Int = 0
     
+    var wishListCount : Int = 0
+    var previousWishListCount : Int = 0
+    
     static let PRODUCT_ID_KEY = "product_id"
     static let PRODUCT_NAME_KEY = "name"
     static let PRODUCT_PRICE_KEY = "price"

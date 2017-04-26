@@ -87,7 +87,7 @@ extension UIView {
 
 
 extension Array{
-    func isExists( product : Product) -> (Bool,Product){
+    func isInCartExists( product : Product) -> (Bool,Product){
         var product = product
         for existProduct in Cart.getCartInstance().productList{
             if existProduct.productId == product.productId{
@@ -97,5 +97,17 @@ extension Array{
         }
         return (false, product)
     }
+    
+    func isInWishListExists( product : Product) -> (Bool,Product){
+        var product = product
+        for existProduct in WishList.getWishListInstance().productList{
+            if existProduct.productId == product.productId{
+                product = existProduct
+                return (true, product)
+            }
+        }
+        return (false, product)
+    }
+    
 }
 
