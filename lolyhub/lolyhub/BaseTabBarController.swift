@@ -20,6 +20,8 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if(self.selectedIndex == 4){
             self.revealViewController().rightRevealToggle(animated: true)

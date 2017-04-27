@@ -16,17 +16,22 @@ class LoginSignupParentViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var contentView: UIView!
     
+    
+    
     override func viewDidLoad() { 
         super.viewDidLoad()
+        
         setupView()
         
     }
+    
     
     func setupView() {
         
         self.signUpButton.titleLabel?.font = UIFont.setOpenSansBold(size: 20)
         self.loginButton.titleLabel?.font = UIFont.setOpenSansBold(size: 20)
         self.sloganLabel.font = UIFont.setOpenSansBold(size: 20)
+       // self.navigationController?.setNavigationBarHidden(false, animated: false)
         
     }
     
@@ -54,6 +59,12 @@ class LoginSignupParentViewController: UIViewController {
         self.navigationController?.pushViewController(loginView, animated: true)
         
     }
+    
+    @IBAction func crossButtonClicked(_ sender: Any) {
+        
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+       
     
     /*
     // MARK: - Navigation

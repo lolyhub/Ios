@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hw1-Yv-5Mm" id="xdu-Fa-Ydz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -687,6 +687,17 @@
                                             <action selector="signUpClicked:" destination="1jZ-cg-9Rd" eventType="touchUpInside" id="lV3-1a-Fwl"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jra-Dg-nIy">
+                                        <rect key="frame" x="334" y="32" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="Jqj-cS-rzN"/>
+                                            <constraint firstAttribute="height" constant="33" id="rSv-Xl-kyu"/>
+                                        </constraints>
+                                        <state key="normal" image="crossButton"/>
+                                        <connections>
+                                            <action selector="crossButtonClicked:" destination="1jZ-cg-9Rd" eventType="touchUpInside" id="APG-GX-EiV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="9bS-GN-YmG" firstAttribute="trailing" secondItem="KCH-V1-RLp" secondAttribute="trailing" id="1cI-IH-f9u"/>
@@ -698,8 +709,10 @@
                                     <constraint firstAttribute="bottom" secondItem="KCH-V1-RLp" secondAttribute="bottom" constant="104" id="UEw-zP-CdO"/>
                                     <constraint firstItem="zFt-R4-g9Q" firstAttribute="trailing" secondItem="TLu-yj-L1Q" secondAttribute="trailingMargin" id="ZKx-rs-8y5"/>
                                     <constraint firstItem="9bS-GN-YmG" firstAttribute="leading" secondItem="KCH-V1-RLp" secondAttribute="leading" id="ZfO-5T-dQ1"/>
+                                    <constraint firstItem="Jra-Dg-nIy" firstAttribute="top" secondItem="TLu-yj-L1Q" secondAttribute="top" constant="32" id="bZa-Iz-vxL"/>
                                     <constraint firstItem="zFt-R4-g9Q" firstAttribute="trailing" secondItem="gRx-jE-Xr3" secondAttribute="trailing" id="mb1-yB-2IP"/>
                                     <constraint firstItem="KCH-V1-RLp" firstAttribute="top" secondItem="9bS-GN-YmG" secondAttribute="bottom" constant="29" id="o4A-wM-rhB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jra-Dg-nIy" secondAttribute="trailing" constant="8" id="srL-Hb-rDD"/>
                                     <constraint firstItem="gRx-jE-Xr3" firstAttribute="trailing" secondItem="9bS-GN-YmG" secondAttribute="trailing" id="wNc-H4-7IG"/>
                                 </constraints>
                             </view>
@@ -714,6 +727,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2nF-K3-3xG">
                         <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" image="crossButton" id="NIN-n4-AoL">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -792,7 +808,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EUc-Tl-7lN" id="MdG-8c-vYw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-dl-KmS">
@@ -1051,7 +1067,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="310"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XOP-fG-MjZ" id="hdX-SX-mUF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-ML-Hps" customClass="iCarousel">
@@ -1086,7 +1102,7 @@
                                         <rect key="frame" x="0.0" y="338" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZN-Bd-KtK" id="Dfl-rt-6Ld">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-jo-P0H">
@@ -1161,7 +1177,7 @@
                                         <rect key="frame" x="0.0" y="498" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zlu-vW-apb" id="cKz-rz-tYd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSliderSample" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-3n-RIN">
@@ -1680,7 +1696,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="hamburgerMenuButtonIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AjH-Jk-Rxr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1699,7 +1715,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lap-NK-EMz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Shop" image="shopBottomBarIcon" selectedImage="shopBottomBarIcon" id="SXY-Lb-I3j"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKW-bU-NwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uKW-bU-NwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1718,7 +1734,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-3f-bhy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Wallet" image="walletBottomBarIcon" selectedImage="walletBottomBarIcon" id="7uM-Uc-ap3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewd-Io-SwP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ewd-Io-SwP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1737,7 +1753,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg1-Ba-uys" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="Wishlist" image="wishListBottomBarIcon" selectedImage="wishListBottomBarIcon" id="Rpd-Ld-hRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zU-wi-o3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1zU-wi-o3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1756,7 +1772,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBv-Fb-CjC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Cart" image="cartBottomBarIcon" selectedImage="cartBottomBarIcon" id="Mif-R8-oti"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybw-eT-BGL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ybw-eT-BGL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1769,12 +1785,13 @@
             </objects>
             <point key="canvasLocation" x="-1383" y="2463"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Sign Up Navigation Controller-->
         <scene sceneID="9PA-4s-JbD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ZV-5D-ASD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginSignUpNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1ZV-5D-ASD" customClass="LoginSignUpNavigationController" customModule="lolyhub" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-Kb-EgM">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H4g-Kb-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1792,6 +1809,7 @@
         <image name="cartBottomBarIcon" width="21" height="21"/>
         <image name="cartNotSelected" width="15" height="15"/>
         <image name="categoryFoodSample" width="75" height="86"/>
+        <image name="crossButton" width="16" height="16"/>
         <image name="facebookIconImage" width="337" height="140"/>
         <image name="googlePlusIconImage" width="337" height="140"/>
         <image name="hamburgerMenuButtonIcon" width="22" height="22"/>

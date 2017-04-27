@@ -26,6 +26,9 @@ func addSideMenuFunctionality(to sideButton: UIBarButtonItem, on currentViewCont
     
 }
 
+
+
+
 func addBackArrowButton(on currentViewController:UIViewController) {
     
     let backImage = UIImage(named: "backArrow")

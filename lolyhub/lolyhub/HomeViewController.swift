@@ -21,7 +21,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        presentLoginSignUpView()
+        
         setupView()
        //side menu setup
         addSideMenuFunctionality(to: sideMenuButton, on: self)
@@ -29,6 +30,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - presentLoginSignUpView
+    func presentLoginSignUpView() {
+        
+        let loginSignUpView = UIStoryboard.loginSignUpNavigationController()
+        
+        self.navigationController?.present(loginSignUpView, animated: true, completion: nil)
+        // self.present(loginSignUpView, animated: true, completion: nil)
+        
+    }
+    
     // MARK: - setupView
     func setupView() {
         

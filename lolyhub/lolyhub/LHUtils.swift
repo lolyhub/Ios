@@ -67,6 +67,12 @@ extension UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+    class func loginSignUpNavigationController() -> LoginSignUpNavigationController {
+        
+        return mainStoryboard().instantiateViewController(withIdentifier: "LoginSignUpNavigationController") as! LoginSignUpNavigationController
+        
+    }
+    
     class func loginViewController() -> LoginViewController {
         return mainStoryboard().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
     }

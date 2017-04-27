@@ -10,6 +10,7 @@
 		180C18911EB07882002390E7 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C18901EB07882002390E7 /* CartModel.swift */; };
 		180C18931EB0788E002390E7 /* WishListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C18921EB0788E002390E7 /* WishListModel.swift */; };
 		180C18951EB092B5002390E7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C18941EB092B5002390E7 /* Product.swift */; };
+		180C18971EB0B6EF002390E7 /* LoginSignUpNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C18961EB0B6EF002390E7 /* LoginSignUpNavigationController.swift */; };
 		18217F5E1E5437BF00E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
 		18217F5F1E5437C600E9D38D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; };
 		18217F601E5437C600E9D38D /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18217F5D1E5437BF00E9D38D /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -112,6 +113,7 @@
 		180C18901EB07882002390E7 /* CartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		180C18921EB0788E002390E7 /* WishListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListModel.swift; sourceTree = "<group>"; };
 		180C18941EB092B5002390E7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		180C18961EB0B6EF002390E7 /* LoginSignUpNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignUpNavigationController.swift; sourceTree = "<group>"; };
 		18217F5D1E5437BF00E9D38D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18217F631E54396800E9D38D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		18217F641E54396800E9D38D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				E978C3DE1E2397C400B73BF6 /* LoginSignupParentViewController.swift */,
 				E978C3E01E239A7600B73BF6 /* LoginViewController.swift */,
 				E978C3E21E239A8200B73BF6 /* SignupViewController.swift */,
+				180C18961EB0B6EF002390E7 /* LoginSignUpNavigationController.swift */,
 			);
 			name = LoginSignup;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				E9367F971E27821200199726 /* BaseTabBarController.swift in Sources */,
 				E9367FA41E27834400199726 /* HomeViewController.swift in Sources */,
 				E978C3E31E239A8200B73BF6 /* SignupViewController.swift in Sources */,
+				180C18971EB0B6EF002390E7 /* LoginSignUpNavigationController.swift in Sources */,
 				E9367F9E1E27831F00199726 /* WalletViewController.swift in Sources */,
 				188E88B71E66A6E700EC1710 /* HomeCategoryCollectionViewCell.swift in Sources */,
 				E978C3DF1E2397C400B73BF6 /* LoginSignupParentViewController.swift in Sources */,
