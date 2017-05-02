@@ -21,7 +21,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presentLoginSignUpView()
+       // presentLoginSignUpView()
+        
+        if let isLoggedIn = UserDefaults.standard.object(forKey: "isLoggedIn") {
+            
+            print("user logged in")
+        }
+        else {
+            presentLoginSignUpViewOnViewController(currentViewController: self)
+        }
         
         setupView()
        //side menu setup
@@ -30,15 +38,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
 
-    // MARK: - presentLoginSignUpView
-    func presentLoginSignUpView() {
-        
-        let loginSignUpView = UIStoryboard.loginSignUpNavigationController()
-        
-        self.navigationController?.present(loginSignUpView, animated: true, completion: nil)
-        // self.present(loginSignUpView, animated: true, completion: nil)
-        
-    }
     
     // MARK: - setupView
     func setupView() {
@@ -48,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         homeTableView.register(UINib.init(nibName: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.homeSingleCategoryTableViewCellIdentifier)
         
-        homeTableView.register(UINib.init(nibName: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier)
+        homeTableView.register(UINib.init(nibName: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.homeLolyhubOfferCategoryTableViewCellIdentifier) 
         
     }
     

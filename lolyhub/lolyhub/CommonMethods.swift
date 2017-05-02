@@ -26,7 +26,13 @@ func addSideMenuFunctionality(to sideButton: UIBarButtonItem, on currentViewCont
     
 }
 
-
+func presentLoginSignUpViewOnViewController(currentViewController:UIViewController) {
+    
+    let loginSignUpView = UIStoryboard.loginSignUpNavigationController()
+    
+    currentViewController.navigationController?.present(loginSignUpView, animated: true, completion: nil)
+    
+}
 
 
 func addBackArrowButton(on currentViewController:UIViewController) {
