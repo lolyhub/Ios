@@ -473,6 +473,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="750"/>
                     <connections>
+                        <outlet property="confirmPasswordTextField" destination="jYv-vT-Rjq" id="pp0-jU-aec"/>
+                        <outlet property="emailTextField" destination="kWX-Ir-nCB" id="ogW-r4-TwK"/>
+                        <outlet property="firstNameTextField" destination="kpY-hO-z3y" id="ECF-sR-G2F"/>
+                        <outlet property="lastNameTextField" destination="4rk-QV-bBD" id="wa3-bN-zl8"/>
+                        <outlet property="passwordTextField" destination="lsz-tx-uBU" id="nuC-0c-qty"/>
                         <outlet property="scrollView" destination="epW-iA-298" id="rg4-tL-YYI"/>
                     </connections>
                 </viewController>

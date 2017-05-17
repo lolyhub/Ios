@@ -23,7 +23,7 @@ class SignupViewController: UIViewController {
 
         addBackArrowButton(on: self)
         setupView()
-        //setupTextFields()
+        setupTextFields()
         self.automaticallyAdjustsScrollViewInsets = false
         self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
