@@ -15,27 +15,15 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var confirmEmailTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+       @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
-    @IBOutlet weak var birthDateTextField: UITextField!
-
-    @IBOutlet weak var countryTextField: UITextField!
-    @IBOutlet weak var stateTextField: UITextField!
-    @IBOutlet weak var mobileNumberTextField: UITextField!
-
-    
-    @IBOutlet weak var genderMaleButton: UIButton!
-    @IBOutlet weak var genderFemaleButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addBackArrowButton(on: self)
         setupView()
-        setupTextFields()
+        //setupTextFields()
         self.automaticallyAdjustsScrollViewInsets = false
         self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
@@ -49,11 +37,6 @@ class SignupViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSFontAttributeName: UIFont.setOpenSansBold(size: 18)]
         
-        self.genderMaleButton.layer.borderColor = UIColor(red: 197/255.0, green: 198/255.0, blue: 197/255.0, alpha: 1).cgColor
-        self.genderFemaleButton.layer.borderColor = UIColor(red: 197/255.0, green: 198/255.0, blue: 197/255.0, alpha: 1).cgColor
-        
-        
-        
     }
     
     
@@ -62,15 +45,10 @@ class SignupViewController: UIViewController {
         self.firstNameTextField.stylePrimaryTextField()
         self.lastNameTextField.stylePrimaryTextField()
         self.emailTextField.stylePrimaryTextField()
-        self.confirmEmailTextField.stylePrimaryTextField()
-        self.usernameTextField.stylePrimaryTextField()
+       
         self.passwordTextField.stylePrimaryTextField()
         self.confirmPasswordTextField.stylePrimaryTextField()
-        self.birthDateTextField.stylePrimaryTextField()
-
-        self.countryTextField.stylePrimaryTextField()
-        self.stateTextField.stylePrimaryTextField()
-        self.mobileNumberTextField.stylePrimaryTextField()
+        
         
     }
     
