@@ -34,6 +34,12 @@ class LolyHubStyler{
     static let categoryFoodSampleImageName = "categoryFoodSample"
     static let categoryWatchSampleImageName = "categoryWatchSample"
 
+    // side menu icons
+    static let sideMenuHomeIconImageName = "sideMenuHomeIcon"
+    static let sideMenuAddProgramsIconImageName = "sideMenuAddProgramsIcon"
+    static let sideMenuOrderHistoryIconImageName = "sideMenuOrderHistoryIcon"
+    static let sideMenuAccountSettingsIconImageName = "sideMenuAccountSettingsIcon"
+    static let sideMenuSignOutIconImageName = "sideMenuSignOutIcon"
     
     
     

@@ -10,6 +10,9 @@ import UIKit
 
 class SideMenuTableViewController: UITableViewController {
 
+    var sideMenuImageArray = [String]()
+    var sideMenuLabelArray = [String]()
+    @IBOutlet var sideMenuTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +21,17 @@ class SideMenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        setupView()
+        sideMenuLabelArray = ["Home","Add Programs","Order History","Account Settings","Sign Out"]
+        sideMenuImageArray = [LolyHubStyler.sideMenuHomeIconImageName,LolyHubStyler.sideMenuAddProgramsIconImageName,LolyHubStyler.sideMenuOrderHistoryIconImageName,LolyHubStyler.sideMenuAccountSettingsIconImageName,LolyHubStyler.sideMenuSignOutIconImageName]
     }
 
+    func setupView() {
+         self.sideMenuTableView.register(UINib.init(nibName: LHCellIdefntifiers.sideMenuTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: LHCellIdefntifiers.sideMenuTableViewCellIdentifier)
+        self.sideMenuTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,31 +46,22 @@ class SideMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return sideMenuLabelArray.count
         
     }
 
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sideMenuCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: LHCellIdefntifiers.sideMenuTableViewCellIdentifier, for: indexPath) as! SideMenuTableViewCell
 
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         // Configure the cell...
         
-        switch indexPath.row {
-        case 0:
-            cell.textLabel?.text = "Home"
-        case 1:
-            cell.textLabel?.text = "Add Programs"
-     
-        case 2:
-            cell.textLabel?.text = "Order History"
-        case 3:
-            cell.textLabel?.text = "Account Settings"
-        default: break
-            //
+        for index in indexPath {
+            cell.sideMenuLabel.text = sideMenuLabelArray[index]
+            cell.sideMenuImageView.image = UIImage(named: sideMenuImageArray[index])
         }
-        
 
         return cell
     }

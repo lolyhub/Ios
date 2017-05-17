@@ -64,6 +64,8 @@
 		E9B50C1E1E4C71AB0054A02D /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B50C1D1E4C71AB0054A02D /* ProductDetailViewController.swift */; };
 		E9B50C221E4C86AD0054A02D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B50C201E4C86AD0054A02D /* ProductTableViewCell.swift */; };
 		E9B50C231E4C86AD0054A02D /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B50C211E4C86AD0054A02D /* ProductTableViewCell.xib */; };
+		E9BFE6EC1ECC56E2006A031D /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFE6EB1ECC56E2006A031D /* SideMenuTableViewCell.swift */; };
+		E9BFE6EE1ECC5701006A031D /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BFE6ED1ECC5701006A031D /* SideMenuTableViewCell.xib */; };
 		E9EE04121E360580006C85FD /* LHUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE04111E360580006C85FD /* LHUtils.swift */; };
 		E9EE041E1E361022006C85FD /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9EE04141E360ED0006C85FD /* OpenSans-Bold.ttf */; };
 		E9EE041F1E361022006C85FD /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9EE04151E360ED0006C85FD /* OpenSans-BoldItalic.ttf */; };
@@ -175,6 +177,8 @@
 		E9B50C1D1E4C71AB0054A02D /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		E9B50C201E4C86AD0054A02D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		E9B50C211E4C86AD0054A02D /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		E9BFE6EB1ECC56E2006A031D /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		E9BFE6ED1ECC5701006A031D /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		E9EE04111E360580006C85FD /* LHUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHUtils.swift; sourceTree = "<group>"; };
 		E9EE04141E360ED0006C85FD /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		E9EE04151E360ED0006C85FD /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 			children = (
 				E9367F961E27821200199726 /* BaseTabBarController.swift */,
 				E9367F9B1E2782E200199726 /* SideMenuTableViewController.swift */,
+				E9BFE6EB1ECC56E2006A031D /* SideMenuTableViewCell.swift */,
+				E9BFE6ED1ECC5701006A031D /* SideMenuTableViewCell.xib */,
 			);
 			name = TabBarController;
 			sourceTree = "<group>";
@@ -588,6 +594,7 @@
 				E9EE04221E361022006C85FD /* OpenSans-Italic.ttf in Resources */,
 				E9EE04231E361022006C85FD /* OpenSans-Light.ttf in Resources */,
 				18D631B81E66DB7400886D13 /* HomeSingleCategoryCollectionViewCell.xib in Resources */,
+				E9BFE6EE1ECC5701006A031D /* SideMenuTableViewCell.xib in Resources */,
 				E92ADE221E52E0860065C918 /* ProductCollectionViewCell.xib in Resources */,
 				E9EE04241E361022006C85FD /* OpenSans-LightItalic.ttf in Resources */,
 				18FC18191E68213A008A8338 /* HomeLolyhubOfferCategoryTableViewCell.xib in Resources */,
@@ -712,6 +719,7 @@
 				18C5408E1EAF6B2900167C69 /* UserModel.swift in Sources */,
 				180C18931EB0788E002390E7 /* WishListModel.swift in Sources */,
 				185B0C011E9FB9E70013F476 /* User.swift in Sources */,
+				E9BFE6EC1ECC56E2006A031D /* SideMenuTableViewCell.swift in Sources */,
 				180C18951EB092B5002390E7 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

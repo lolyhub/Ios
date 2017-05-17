@@ -47,6 +47,9 @@
                             <outlet property="delegate" destination="JvY-ad-amY" id="t78-AT-Ugz"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="sideMenuTableView" destination="w2L-Hb-qTn" id="oVB-hj-c0p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERm-3f-42Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1530,7 +1533,7 @@
         <scene sceneID="9S3-rt-Zx4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7w7-wG-2nK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="hamburgerMenuButtonIcon" id="jYh-ZK-L9b"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeBottomBarIcon" id="jYh-ZK-L9b"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AjH-Jk-Rxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1649,6 +1652,7 @@
         <image name="facebookIconImage" width="439" height="52"/>
         <image name="googlePlusIconImage" width="439" height="52"/>
         <image name="hamburgerMenuButtonIcon" width="22" height="22"/>
+        <image name="homeBottomBarIcon" width="21" height="21"/>
         <image name="homeSliderSample" width="319" height="194"/>
         <image name="lolyhubColorBar" width="310" height="5"/>
         <image name="lolyhubLogo" width="318" height="136"/>

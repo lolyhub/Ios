@@ -27,6 +27,7 @@ class LHCellIdefntifiers {
     static let homeCategoryTableViewCellIdentifier = "HomeCategoryTableViewCell"
     static let HomeCategoryCollectionViewCellIdentifier = "HomeCategoryCollectionViewCell"
     static let homeLolyhubOfferCategoryTableViewCellIdentifier = "HomeLolyhubOfferCategoryTableViewCell"
+    static let sideMenuTableViewCellIdentifier = "SideMenuTableViewCell"
 
     
 }
